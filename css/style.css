@@ -20,17 +20,18 @@
   --text-muted: #64748b;
   --text-white: #ffffff;
 
-  --accent-cyan: #00f2fe;
-  --accent-blue: #38bdf8;
-  --accent-indigo: #6366f1;
-  --accent-purple: #a855f7;
-  --accent-pink: #f43f5e;
+  --accent-orange: #f97316;
+  --accent-amber: #fb923c;
   --accent-emerald: #10b981;
-  --accent-amber: #f59e0b;
+  --accent-violet: #8b5cf6;
+  --accent-purple: #a855f7;
+  --accent-cyan: #06b6d4;
+  --accent-blue: #38bdf8;
+  --accent-pink: #f43f5e;
 
-  --gradient-brand: linear-gradient(135deg, #00f2fe 0%, #38bdf8 35%, #6366f1 70%, #ec4899 100%);
+  --gradient-brand: linear-gradient(135deg, #f97316 0%, #fb923c 25%, #8b5cf6 65%, #10b981 100%);
   --gradient-card: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.005) 100%);
-  --gradient-cyan: linear-gradient(135deg, #00f2fe 0%, #0284c7 100%);
+  --gradient-cyan: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
   --gradient-emerald: linear-gradient(135deg, #34d399 0%, #059669 100%);
   --gradient-pink: linear-gradient(135deg, #f43f5e 0%, #be123c 100%);
 
@@ -116,7 +117,7 @@ body {
 .orb-1 {
   width: 500px;
   height: 500px;
-  background: var(--accent-cyan);
+  background: var(--accent-orange);
   top: -100px;
   left: -100px;
 }
@@ -124,7 +125,7 @@ body {
 .orb-2 {
   width: 600px;
   height: 600px;
-  background: var(--accent-indigo);
+  background: var(--accent-violet);
   top: 40%;
   right: -150px;
 }
@@ -132,7 +133,7 @@ body {
 .orb-3 {
   width: 450px;
   height: 450px;
-  background: var(--accent-purple);
+  background: var(--accent-emerald);
   bottom: -50px;
   left: 20%;
 }
