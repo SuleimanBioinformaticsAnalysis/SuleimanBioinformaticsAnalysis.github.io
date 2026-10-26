@@ -1,0 +1,56 @@
+[
+  {
+    "id": "hsa04613",
+    "description": "Neutrophil extracellular trap formation",
+    "geneRatio": "24/142",
+    "padj": "2.54e-13",
+    "count": 24,
+    "category": "Organismal Systems",
+    "subcategory": "Immune system"
+  },
+  {
+    "id": "hsa05322",
+    "description": "Systemic lupus erythematosus",
+    "geneRatio": "20/142",
+    "padj": "3.11e-12",
+    "count": 20,
+    "category": "Human Diseases",
+    "subcategory": "Immune disease"
+  },
+  {
+    "id": "hsa05034",
+    "description": "Alcoholism",
+    "geneRatio": "22/142",
+    "padj": "5.92e-12",
+    "count": 22,
+    "category": "Human Diseases",
+    "subcategory": "Substance dependence"
+  },
+  {
+    "id": "hsa05203",
+    "description": "Viral carcinogenesis",
+    "geneRatio": "13/142",
+    "padj": "7.20e-04",
+    "count": 13,
+    "category": "Human Diseases",
+    "subcategory": "Cancer: overview"
+  },
+  {
+    "id": "hsa04610",
+    "description": "Complement and coagulation cascades",
+    "geneRatio": "8/142",
+    "padj": "2.33e-03",
+    "count": 8,
+    "category": "Organismal Systems",
+    "subcategory": "Immune system"
+  },
+  {
+    "id": "hsa04976",
+    "description": "Bile secretion",
+    "geneRatio": "7/142",
+    "padj": "1.52e-02",
+    "count": 7,
+    "category": "Organismal Systems",
+    "subcategory": "Digestive system"
+  }
+]

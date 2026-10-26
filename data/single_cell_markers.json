@@ -1,0 +1,722 @@
+[
+  {
+    "cluster": "0",
+    "gene": "LDHB",
+    "avg_log2FC": 1.21,
+    "pct1": 0.912,
+    "pct2": 0.592,
+    "p_val_adj": "5.14e-108"
+  },
+  {
+    "cluster": "0",
+    "gene": "CCR7",
+    "avg_log2FC": 2.4,
+    "pct1": 0.447,
+    "pct2": 0.108,
+    "p_val_adj": "1.31e-83"
+  },
+  {
+    "cluster": "0",
+    "gene": "LEF1",
+    "avg_log2FC": 2.14,
+    "pct1": 0.342,
+    "pct2": 0.103,
+    "p_val_adj": "1.86e-47"
+  },
+  {
+    "cluster": "0",
+    "gene": "NOSIP",
+    "avg_log2FC": 1.2,
+    "pct1": 0.629,
+    "pct2": 0.359,
+    "p_val_adj": "2.66e-43"
+  },
+  {
+    "cluster": "0",
+    "gene": "PIK3IP1",
+    "avg_log2FC": 1.53,
+    "pct1": 0.443,
+    "pct2": 0.185,
+    "p_val_adj": "3.85e-40"
+  },
+  {
+    "cluster": "0",
+    "gene": "PRKCQ-AS1",
+    "avg_log2FC": 1.99,
+    "pct1": 0.33,
+    "pct2": 0.112,
+    "p_val_adj": "8.60e-39"
+  },
+  {
+    "cluster": "0",
+    "gene": "MAL",
+    "avg_log2FC": 1.96,
+    "pct1": 0.268,
+    "pct2": 0.087,
+    "p_val_adj": "1.84e-30"
+  },
+  {
+    "cluster": "0",
+    "gene": "TCF7",
+    "avg_log2FC": 1.34,
+    "pct1": 0.393,
+    "pct2": 0.177,
+    "p_val_adj": "2.74e-30"
+  },
+  {
+    "cluster": "0",
+    "gene": "C12orf57",
+    "avg_log2FC": 1.11,
+    "pct1": 0.425,
+    "pct2": 0.258,
+    "p_val_adj": "2.80e-15"
+  },
+  {
+    "cluster": "0",
+    "gene": "FLT3LG",
+    "avg_log2FC": 1.36,
+    "pct1": 0.276,
+    "pct2": 0.137,
+    "p_val_adj": "7.35e-15"
+  },
+  {
+    "cluster": "1",
+    "gene": "S100A8",
+    "avg_log2FC": 6.65,
+    "pct1": 0.975,
+    "pct2": 0.121,
+    "p_val_adj": "0.00e+00"
+  },
+  {
+    "cluster": "1",
+    "gene": "LGALS2",
+    "avg_log2FC": 5.65,
+    "pct1": 0.909,
+    "pct2": 0.059,
+    "p_val_adj": "0.00e+00"
+  },
+  {
+    "cluster": "1",
+    "gene": "S100A9",
+    "avg_log2FC": 6.18,
+    "pct1": 0.996,
+    "pct2": 0.215,
+    "p_val_adj": "0.00e+00"
+  },
+  {
+    "cluster": "1",
+    "gene": "CD14",
+    "avg_log2FC": 5.98,
+    "pct1": 0.667,
+    "pct2": 0.027,
+    "p_val_adj": "1.42e-291"
+  },
+  {
+    "cluster": "1",
+    "gene": "MS4A6A",
+    "avg_log2FC": 5.35,
+    "pct1": 0.686,
+    "pct2": 0.041,
+    "p_val_adj": "2.28e-274"
+  },
+  {
+    "cluster": "1",
+    "gene": "LYZ",
+    "avg_log2FC": 4.74,
+    "pct1": 1.0,
+    "pct2": 0.516,
+    "p_val_adj": "5.34e-264"
+  },
+  {
+    "cluster": "1",
+    "gene": "ASGR1",
+    "avg_log2FC": 5.68,
+    "pct1": 0.37,
+    "pct2": 0.015,
+    "p_val_adj": "2.09e-146"
+  },
+  {
+    "cluster": "1",
+    "gene": "FOLR3",
+    "avg_log2FC": 7.28,
+    "pct1": 0.299,
+    "pct2": 0.004,
+    "p_val_adj": "9.70e-135"
+  },
+  {
+    "cluster": "1",
+    "gene": "RBP7",
+    "avg_log2FC": 4.98,
+    "pct1": 0.312,
+    "pct2": 0.013,
+    "p_val_adj": "9.13e-121"
+  },
+  {
+    "cluster": "1",
+    "gene": "S100A12",
+    "avg_log2FC": 6.74,
+    "pct1": 0.277,
+    "pct2": 0.006,
+    "p_val_adj": "4.64e-117"
+  },
+  {
+    "cluster": "2",
+    "gene": "IL7R",
+    "avg_log2FC": 1.44,
+    "pct1": 0.75,
+    "pct2": 0.326,
+    "p_val_adj": "4.82e-64"
+  },
+  {
+    "cluster": "2",
+    "gene": "CD2",
+    "avg_log2FC": 1.63,
+    "pct1": 0.651,
+    "pct2": 0.245,
+    "p_val_adj": "4.71e-55"
+  },
+  {
+    "cluster": "2",
+    "gene": "AQP3",
+    "avg_log2FC": 2.09,
+    "pct1": 0.42,
+    "pct2": 0.111,
+    "p_val_adj": "4.07e-54"
+  },
+  {
+    "cluster": "2",
+    "gene": "TRAT1",
+    "avg_log2FC": 1.52,
+    "pct1": 0.397,
+    "pct2": 0.124,
+    "p_val_adj": "4.00e-38"
+  },
+  {
+    "cluster": "2",
+    "gene": "CD40LG",
+    "avg_log2FC": 1.87,
+    "pct1": 0.263,
+    "pct2": 0.07,
+    "p_val_adj": "6.90e-30"
+  },
+  {
+    "cluster": "2",
+    "gene": "TRADD",
+    "avg_log2FC": 1.46,
+    "pct1": 0.366,
+    "pct2": 0.136,
+    "p_val_adj": "7.51e-28"
+  },
+  {
+    "cluster": "2",
+    "gene": "TTC39C",
+    "avg_log2FC": 1.46,
+    "pct1": 0.3,
+    "pct2": 0.097,
+    "p_val_adj": "6.79e-26"
+  },
+  {
+    "cluster": "2",
+    "gene": "OPTN",
+    "avg_log2FC": 1.47,
+    "pct1": 0.294,
+    "pct2": 0.11,
+    "p_val_adj": "5.78e-19"
+  },
+  {
+    "cluster": "2",
+    "gene": "CORO1B",
+    "avg_log2FC": 1.6,
+    "pct1": 0.305,
+    "pct2": 0.136,
+    "p_val_adj": "3.63e-16"
+  },
+  {
+    "cluster": "2",
+    "gene": "SUSD3",
+    "avg_log2FC": 1.45,
+    "pct1": 0.277,
+    "pct2": 0.114,
+    "p_val_adj": "1.46e-15"
+  },
+  {
+    "cluster": "3",
+    "gene": "CD79A",
+    "avg_log2FC": 6.91,
+    "pct1": 0.936,
+    "pct2": 0.041,
+    "p_val_adj": "0.00e+00"
+  },
+  {
+    "cluster": "3",
+    "gene": "MS4A1",
+    "avg_log2FC": 5.72,
+    "pct1": 0.855,
+    "pct2": 0.053,
+    "p_val_adj": "0.00e+00"
+  },
+  {
+    "cluster": "3",
+    "gene": "LINC00926",
+    "avg_log2FC": 7.38,
+    "pct1": 0.564,
+    "pct2": 0.009,
+    "p_val_adj": "3.29e-268"
+  },
+  {
+    "cluster": "3",
+    "gene": "TCL1A",
+    "avg_log2FC": 6.69,
+    "pct1": 0.622,
+    "pct2": 0.022,
+    "p_val_adj": "1.30e-266"
+  },
+  {
+    "cluster": "3",
+    "gene": "VPREB3",
+    "avg_log2FC": 7.14,
+    "pct1": 0.488,
+    "pct2": 0.007,
+    "p_val_adj": "3.76e-233"
+  },
+  {
+    "cluster": "3",
+    "gene": "FCER2",
+    "avg_log2FC": 6.36,
+    "pct1": 0.381,
+    "pct2": 0.009,
+    "p_val_adj": "3.32e-166"
+  },
+  {
+    "cluster": "3",
+    "gene": "TSPAN13",
+    "avg_log2FC": 6.06,
+    "pct1": 0.311,
+    "pct2": 0.007,
+    "p_val_adj": "5.50e-134"
+  },
+  {
+    "cluster": "3",
+    "gene": "FCRLA",
+    "avg_log2FC": 6.72,
+    "pct1": 0.297,
+    "pct2": 0.006,
+    "p_val_adj": "9.71e-131"
+  },
+  {
+    "cluster": "3",
+    "gene": "PKIG",
+    "avg_log2FC": 5.52,
+    "pct1": 0.276,
+    "pct2": 0.008,
+    "p_val_adj": "1.02e-111"
+  },
+  {
+    "cluster": "3",
+    "gene": "HLA-DOB",
+    "avg_log2FC": 5.48,
+    "pct1": 0.288,
+    "pct2": 0.011,
+    "p_val_adj": "1.57e-110"
+  },
+  {
+    "cluster": "4",
+    "gene": "CCL5",
+    "avg_log2FC": 3.33,
+    "pct1": 0.983,
+    "pct2": 0.234,
+    "p_val_adj": "7.70e-198"
+  },
+  {
+    "cluster": "4",
+    "gene": "NKG7",
+    "avg_log2FC": 2.46,
+    "pct1": 0.966,
+    "pct2": 0.216,
+    "p_val_adj": "4.33e-177"
+  },
+  {
+    "cluster": "4",
+    "gene": "GZMA",
+    "avg_log2FC": 2.62,
+    "pct1": 0.818,
+    "pct2": 0.121,
+    "p_val_adj": "1.05e-171"
+  },
+  {
+    "cluster": "4",
+    "gene": "CST7",
+    "avg_log2FC": 2.63,
+    "pct1": 0.797,
+    "pct2": 0.122,
+    "p_val_adj": "6.71e-167"
+  },
+  {
+    "cluster": "4",
+    "gene": "GZMK",
+    "avg_log2FC": 4.41,
+    "pct1": 0.577,
+    "pct2": 0.055,
+    "p_val_adj": "9.95e-161"
+  },
+  {
+    "cluster": "4",
+    "gene": "CD8A",
+    "avg_log2FC": 3.35,
+    "pct1": 0.491,
+    "pct2": 0.072,
+    "p_val_adj": "3.64e-99"
+  },
+  {
+    "cluster": "4",
+    "gene": "KLRG1",
+    "avg_log2FC": 3.02,
+    "pct1": 0.478,
+    "pct2": 0.07,
+    "p_val_adj": "1.40e-96"
+  },
+  {
+    "cluster": "4",
+    "gene": "GZMH",
+    "avg_log2FC": 3.74,
+    "pct1": 0.419,
+    "pct2": 0.061,
+    "p_val_adj": "4.48e-84"
+  },
+  {
+    "cluster": "4",
+    "gene": "CD8B",
+    "avg_log2FC": 2.2,
+    "pct1": 0.371,
+    "pct2": 0.097,
+    "p_val_adj": "4.59e-37"
+  },
+  {
+    "cluster": "4",
+    "gene": "NCR3",
+    "avg_log2FC": 2.69,
+    "pct1": 0.275,
+    "pct2": 0.072,
+    "p_val_adj": "5.64e-27"
+  },
+  {
+    "cluster": "5",
+    "gene": "CDKN1C",
+    "avg_log2FC": 5.43,
+    "pct1": 0.506,
+    "pct2": 0.01,
+    "p_val_adj": "2.32e-208"
+  },
+  {
+    "cluster": "5",
+    "gene": "HES4",
+    "avg_log2FC": 4.99,
+    "pct1": 0.586,
+    "pct2": 0.02,
+    "p_val_adj": "2.08e-203"
+  },
+  {
+    "cluster": "5",
+    "gene": "RP11-290F20.3",
+    "avg_log2FC": 4.06,
+    "pct1": 0.84,
+    "pct2": 0.068,
+    "p_val_adj": "1.16e-195"
+  },
+  {
+    "cluster": "5",
+    "gene": "MS4A7",
+    "avg_log2FC": 4.39,
+    "pct1": 0.809,
+    "pct2": 0.073,
+    "p_val_adj": "2.35e-182"
+  },
+  {
+    "cluster": "5",
+    "gene": "FCGR3A",
+    "avg_log2FC": 4.06,
+    "pct1": 0.975,
+    "pct2": 0.134,
+    "p_val_adj": "4.82e-180"
+  },
+  {
+    "cluster": "5",
+    "gene": "CKB",
+    "avg_log2FC": 5.88,
+    "pct1": 0.37,
+    "pct2": 0.005,
+    "p_val_adj": "1.13e-163"
+  },
+  {
+    "cluster": "5",
+    "gene": "LILRA3",
+    "avg_log2FC": 4.23,
+    "pct1": 0.537,
+    "pct2": 0.031,
+    "p_val_adj": "1.22e-142"
+  },
+  {
+    "cluster": "5",
+    "gene": "MS4A4A",
+    "avg_log2FC": 5.16,
+    "pct1": 0.383,
+    "pct2": 0.011,
+    "p_val_adj": "8.86e-136"
+  },
+  {
+    "cluster": "5",
+    "gene": "BATF3",
+    "avg_log2FC": 4.81,
+    "pct1": 0.296,
+    "pct2": 0.01,
+    "p_val_adj": "9.24e-100"
+  },
+  {
+    "cluster": "5",
+    "gene": "CTD-2006K23.1",
+    "avg_log2FC": 4.37,
+    "pct1": 0.284,
+    "pct2": 0.015,
+    "p_val_adj": "7.30e-75"
+  },
+  {
+    "cluster": "6",
+    "gene": "GZMB",
+    "avg_log2FC": 5.98,
+    "pct1": 0.961,
+    "pct2": 0.068,
+    "p_val_adj": "1.09e-264"
+  },
+  {
+    "cluster": "6",
+    "gene": "FGFBP2",
+    "avg_log2FC": 5.4,
+    "pct1": 0.877,
+    "pct2": 0.062,
+    "p_val_adj": "4.67e-233"
+  },
+  {
+    "cluster": "6",
+    "gene": "SPON2",
+    "avg_log2FC": 5.71,
+    "pct1": 0.729,
+    "pct2": 0.039,
+    "p_val_adj": "5.71e-215"
+  },
+  {
+    "cluster": "6",
+    "gene": "GNLY",
+    "avg_log2FC": 5.96,
+    "pct1": 0.961,
+    "pct2": 0.131,
+    "p_val_adj": "4.30e-187"
+  },
+  {
+    "cluster": "6",
+    "gene": "AKR1C3",
+    "avg_log2FC": 6.22,
+    "pct1": 0.471,
+    "pct2": 0.013,
+    "p_val_adj": "1.11e-174"
+  },
+  {
+    "cluster": "6",
+    "gene": "XCL2",
+    "avg_log2FC": 5.36,
+    "pct1": 0.535,
+    "pct2": 0.022,
+    "p_val_adj": "8.62e-171"
+  },
+  {
+    "cluster": "6",
+    "gene": "CLIC3",
+    "avg_log2FC": 5.27,
+    "pct1": 0.568,
+    "pct2": 0.029,
+    "p_val_adj": "7.41e-165"
+  },
+  {
+    "cluster": "6",
+    "gene": "XCL1",
+    "avg_log2FC": 5.3,
+    "pct1": 0.361,
+    "pct2": 0.012,
+    "p_val_adj": "1.96e-121"
+  },
+  {
+    "cluster": "6",
+    "gene": "SH2D1B",
+    "avg_log2FC": 6.07,
+    "pct1": 0.29,
+    "pct2": 0.007,
+    "p_val_adj": "7.38e-108"
+  },
+  {
+    "cluster": "6",
+    "gene": "KLRF1",
+    "avg_log2FC": 5.43,
+    "pct1": 0.271,
+    "pct2": 0.008,
+    "p_val_adj": "7.07e-94"
+  },
+  {
+    "cluster": "7",
+    "gene": "FCER1A",
+    "avg_log2FC": 7.63,
+    "pct1": 0.812,
+    "pct2": 0.011,
+    "p_val_adj": "2.03e-216"
+  },
+  {
+    "cluster": "7",
+    "gene": "SERPINF1",
+    "avg_log2FC": 8.03,
+    "pct1": 0.5,
+    "pct2": 0.002,
+    "p_val_adj": "2.00e-203"
+  },
+  {
+    "cluster": "7",
+    "gene": "CLEC10A",
+    "avg_log2FC": 6.07,
+    "pct1": 0.688,
+    "pct2": 0.015,
+    "p_val_adj": "4.14e-134"
+  },
+  {
+    "cluster": "7",
+    "gene": "ENHO",
+    "avg_log2FC": 6.11,
+    "pct1": 0.438,
+    "pct2": 0.005,
+    "p_val_adj": "9.52e-130"
+  },
+  {
+    "cluster": "7",
+    "gene": "CLIC2",
+    "avg_log2FC": 6.62,
+    "pct1": 0.281,
+    "pct2": 0.002,
+    "p_val_adj": "3.10e-99"
+  },
+  {
+    "cluster": "7",
+    "gene": "CD1C",
+    "avg_log2FC": 4.76,
+    "pct1": 0.562,
+    "pct2": 0.02,
+    "p_val_adj": "2.98e-76"
+  },
+  {
+    "cluster": "7",
+    "gene": "UPK3A",
+    "avg_log2FC": 4.4,
+    "pct1": 0.281,
+    "pct2": 0.009,
+    "p_val_adj": "1.20e-38"
+  },
+  {
+    "cluster": "7",
+    "gene": "LGMN",
+    "avg_log2FC": 3.98,
+    "pct1": 0.281,
+    "pct2": 0.011,
+    "p_val_adj": "1.92e-32"
+  },
+  {
+    "cluster": "7",
+    "gene": "PON2",
+    "avg_log2FC": 4.06,
+    "pct1": 0.25,
+    "pct2": 0.009,
+    "p_val_adj": "1.21e-31"
+  },
+  {
+    "cluster": "7",
+    "gene": "P2RY13",
+    "avg_log2FC": 4.0,
+    "pct1": 0.25,
+    "pct2": 0.015,
+    "p_val_adj": "2.42e-19"
+  },
+  {
+    "cluster": "8",
+    "gene": "GP9",
+    "avg_log2FC": 11.48,
+    "pct1": 0.923,
+    "pct2": 0.002,
+    "p_val_adj": "0.00e+00"
+  },
+  {
+    "cluster": "8",
+    "gene": "AP001189.4",
+    "avg_log2FC": 11.39,
+    "pct1": 0.846,
+    "pct2": 0.001,
+    "p_val_adj": "0.00e+00"
+  },
+  {
+    "cluster": "8",
+    "gene": "ITGA2B",
+    "avg_log2FC": 11.59,
+    "pct1": 0.846,
+    "pct2": 0.002,
+    "p_val_adj": "0.00e+00"
+  },
+  {
+    "cluster": "8",
+    "gene": "LY6G6F",
+    "avg_log2FC": 14.36,
+    "pct1": 0.615,
+    "pct2": 0.0,
+    "p_val_adj": "0.00e+00"
+  },
+  {
+    "cluster": "8",
+    "gene": "SEPT5",
+    "avg_log2FC": 11.16,
+    "pct1": 0.692,
+    "pct2": 0.001,
+    "p_val_adj": "3.91e-295"
+  },
+  {
+    "cluster": "8",
+    "gene": "CLDN5",
+    "avg_log2FC": 13.26,
+    "pct1": 0.462,
+    "pct2": 0.0,
+    "p_val_adj": "5.58e-224"
+  },
+  {
+    "cluster": "8",
+    "gene": "PTCRA",
+    "avg_log2FC": 11.17,
+    "pct1": 0.769,
+    "pct2": 0.004,
+    "p_val_adj": "2.00e-218"
+  },
+  {
+    "cluster": "8",
+    "gene": "RP11-879F14.2",
+    "avg_log2FC": 13.93,
+    "pct1": 0.385,
+    "pct2": 0.0,
+    "p_val_adj": "1.00e-217"
+  },
+  {
+    "cluster": "8",
+    "gene": "C2orf88",
+    "avg_log2FC": 11.22,
+    "pct1": 0.538,
+    "pct2": 0.001,
+    "p_val_adj": "2.81e-213"
+  },
+  {
+    "cluster": "8",
+    "gene": "GNG11",
+    "avg_log2FC": 11.36,
+    "pct1": 1.0,
+    "pct2": 0.01,
+    "p_val_adj": "7.11e-196"
+  }
+]

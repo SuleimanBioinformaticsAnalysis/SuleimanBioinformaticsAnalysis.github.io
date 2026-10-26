@@ -1,0 +1,21 @@
+{
+  "name": "SuleimanBioinformaticsAnalysis",
+  "short_name": "SBA Hub",
+  "description": "Multi-Omics Pipelines, Clinical Oncology & Structural Drug Discovery Portal",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#070b14",
+  "theme_color": "#00f2fe",
+  "icons": [
+    {
+      "src": "favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

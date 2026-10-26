@@ -1,0 +1,162 @@
+[
+  {
+    "gene": "CYP2C9",
+    "rsid": "rs7900194",
+    "genotype": "GG",
+    "significance": "Benign/Likely benign; drug response",
+    "phenotype": "Lesinurad, Piroxicam, Flurbiprofen response",
+    "type": "Pharmacogenomics"
+  },
+  {
+    "gene": "CYP2C9",
+    "rsid": "rs28371685",
+    "genotype": "CC",
+    "significance": "Benign/Likely benign; drug response",
+    "phenotype": "Flurbiprofen, Piroxicam, Lesinurad metabolism",
+    "type": "Pharmacogenomics"
+  },
+  {
+    "gene": "NAT2",
+    "rsid": "rs1801280",
+    "genotype": "TT",
+    "significance": "Benign; drug response",
+    "phenotype": "Slow acetylator phenotype (N-acetyltransferase)",
+    "type": "Pharmacogenomics"
+  },
+  {
+    "gene": "SLC29A3",
+    "rsid": "rs780668",
+    "genotype": "TT",
+    "significance": "Benign; drug response",
+    "phenotype": "Gemcitabine chemotherapy response",
+    "type": "Pharmacogenomics"
+  },
+  {
+    "gene": "NAT2",
+    "rsid": "rs1799930",
+    "genotype": "AA",
+    "significance": "Benign; drug response",
+    "phenotype": "Slow acetylator variant",
+    "type": "Pharmacogenomics"
+  },
+  {
+    "gene": "LMO1",
+    "rsid": "rs2168101",
+    "genotype": "CC",
+    "significance": "Benign; protective",
+    "phenotype": "Neuroblastoma protective polymorphism",
+    "type": "Protective"
+  },
+  {
+    "gene": "CR1",
+    "rsid": "rs2274567",
+    "genotype": "AG",
+    "significance": "Benign; protective",
+    "phenotype": "Severe malaria resistance",
+    "type": "Protective"
+  },
+  {
+    "gene": "KCNMB1",
+    "rsid": "rs11739136",
+    "genotype": "CC",
+    "significance": "Benign; protective",
+    "phenotype": "Diastolic hypertension resistance",
+    "type": "Protective"
+  },
+  {
+    "gene": "RET",
+    "rsid": "rs2435357",
+    "genotype": "CT",
+    "significance": "Benign; risk factor",
+    "phenotype": "Hirschsprung disease, MEN2 susceptibility",
+    "type": "Risk Factor"
+  },
+  {
+    "gene": "HNMT",
+    "rsid": "rs11558538",
+    "genotype": "CC",
+    "significance": "Benign; risk factor",
+    "phenotype": "Histamine metabolism & Asthma susceptibility",
+    "type": "Risk Factor"
+  },
+  {
+    "gene": "CILP",
+    "rsid": "rs2073711",
+    "genotype": "GG",
+    "significance": "Benign; risk factor",
+    "phenotype": "Lumbar disc disease susceptibility",
+    "type": "Risk Factor"
+  },
+  {
+    "gene": "IL13",
+    "rsid": "rs20541",
+    "genotype": "GG",
+    "significance": "Benign; risk factor",
+    "phenotype": "Allergic rhinitis & asthma susceptibility",
+    "type": "Risk Factor"
+  },
+  {
+    "gene": "LOXL1",
+    "rsid": "rs3825942",
+    "genotype": "GG",
+    "significance": "Benign; risk factor",
+    "phenotype": "Exfoliation syndrome glaucoma susceptibility",
+    "type": "Risk Factor"
+  },
+  {
+    "gene": "LTA",
+    "rsid": "rs1041981",
+    "genotype": "CC",
+    "significance": "Benign; risk factor",
+    "phenotype": "Myocardial infarction susceptibility",
+    "type": "Risk Factor"
+  },
+  {
+    "gene": "MUC5B",
+    "rsid": "rs35705950",
+    "genotype": "GT",
+    "significance": "Benign; risk factor",
+    "phenotype": "Pulmonary fibrosis & COVID-19 respiratory risk",
+    "type": "Risk Factor"
+  },
+  {
+    "gene": "SLC30A8",
+    "rsid": "rs13266634",
+    "genotype": "CT",
+    "significance": "Benign; risk factor",
+    "phenotype": "Type 2 diabetes mellitus susceptibility",
+    "type": "Risk Factor"
+  },
+  {
+    "gene": "HPD",
+    "rsid": "rs137852868",
+    "genotype": "GG",
+    "significance": "Conflicting pathogenicity",
+    "phenotype": "Tyrosinemia type III / Hawkinsinuria",
+    "type": "Clinical Variant"
+  },
+  {
+    "gene": "MVK",
+    "rsid": "rs138342076",
+    "genotype": "CC",
+    "significance": "Conflicting pathogenicity",
+    "phenotype": "Mevalonic aciduria / HIDS periodic fever",
+    "type": "Clinical Variant"
+  },
+  {
+    "gene": "TRPV4",
+    "rsid": "rs201815805",
+    "genotype": "GG",
+    "significance": "Conflicting pathogenicity",
+    "phenotype": "Charcot-Marie-Tooth type 2C / Spondylometaphyseal dysplasia",
+    "type": "Clinical Variant"
+  },
+  {
+    "gene": "DIABLO",
+    "rsid": "rs370571609",
+    "genotype": "AA",
+    "significance": "Conflicting pathogenicity",
+    "phenotype": "Familial breast cancer & endometrial carcinoma",
+    "type": "Clinical Variant"
+  }
+]

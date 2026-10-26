@@ -1,0 +1,38 @@
+{
+  "target": "Human AKT1 Kinase (UniProt P31749)",
+  "organism": "Homo sapiens",
+  "predictionMethod": "AlphaFold2 Multimer / Monomer v2.3",
+  "structuralMetrics": {
+    "mean_pLDDT": 92.4,
+    "coreDomain_pLDDT": 96.1,
+    "ramachandranFavored": "94.2%",
+    "activeSiteResidues": ["Trp80", "Lys179", "Glu198", "Asp274", "Asp292"]
+  },
+  "dockingEngine": "AutoDock Vina 1.2.5",
+  "inhibitors": [
+    {
+      "name": "MK-2206",
+      "type": "Allosteric Kinase Inhibitor",
+      "affinity_kcal_mol": -9.4,
+      "bindingPocket": "PH-Kinase interdomain allosteric pocket",
+      "keyInteractions": ["Trp80 (π-π stacking)", "Asp292 (Hydrogen bond)", "Glu198 (Salt bridge)"],
+      "status": "Investigational / Phase II Clinical Trials"
+    },
+    {
+      "name": "Ipatasertib (GDC-0068)",
+      "type": "ATP-Competitive Inhibitor",
+      "affinity_kcal_mol": -8.2,
+      "bindingPocket": "Kinase domain catalytic ATP-binding cleft",
+      "keyInteractions": ["Lys179 (H-bond)", "Glu234 (Electrostatic)", "Met227 (Hydrophobic)"],
+      "status": "Phase III TNBC Combination Therapy"
+    },
+    {
+      "name": "Capivasertib (AZD5363)",
+      "type": "Pan-AKT ATP-Competitive Inhibitor",
+      "affinity_kcal_mol": -8.0,
+      "bindingPocket": "Catalytic ATP hinge region",
+      "keyInteractions": ["Ala230 (Backbone H-bond)", "Phe438 (Aromatic contact)"],
+      "status": "FDA Approved for Hormone Receptor-positive Breast Cancer"
+    }
+  ]
+}

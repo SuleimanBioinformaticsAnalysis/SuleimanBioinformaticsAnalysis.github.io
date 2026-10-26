@@ -1,0 +1,562 @@
+[
+  {
+    "gene": "PGAM4P2",
+    "log2FC": -7.5,
+    "padj": "1.85e-02",
+    "baseMean": 37.4,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ALB",
+    "log2FC": -6.57,
+    "padj": "2.14e-07",
+    "baseMean": 1607.0,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ENSG00000285722",
+    "log2FC": -6.33,
+    "padj": "4.16e-02",
+    "baseMean": 20.8,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "MDGA2",
+    "log2FC": -6.07,
+    "padj": "1.52e-05",
+    "baseMean": 113.7,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "H3C8",
+    "log2FC": -5.89,
+    "padj": "6.62e-05",
+    "baseMean": 16.5,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "LINC02253",
+    "log2FC": -5.87,
+    "padj": "6.62e-05",
+    "baseMean": 9.5,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "DSCAM-AS1",
+    "log2FC": -5.82,
+    "padj": "7.07e-04",
+    "baseMean": 2277.7,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ENSG00000266869",
+    "log2FC": -5.76,
+    "padj": "4.60e-02",
+    "baseMean": 10.9,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "LINC00858",
+    "log2FC": -5.75,
+    "padj": "2.94e-03",
+    "baseMean": 15.0,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ENSG00000272046",
+    "log2FC": -5.63,
+    "padj": "6.54e-03",
+    "baseMean": 18.5,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "CXCL13",
+    "log2FC": 5.59,
+    "padj": "6.62e-05",
+    "baseMean": 354.9,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "LINC01446",
+    "log2FC": -5.42,
+    "padj": "7.08e-04",
+    "baseMean": 54.3,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ENSG00000287064",
+    "log2FC": -5.39,
+    "padj": "2.34e-03",
+    "baseMean": 5.6,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "MIR4429",
+    "log2FC": -5.1,
+    "padj": "2.57e-03",
+    "baseMean": 6.9,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "GSTA2",
+    "log2FC": -5.09,
+    "padj": "2.88e-02",
+    "baseMean": 6.9,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "GPR158",
+    "log2FC": -5.0,
+    "padj": "2.14e-07",
+    "baseMean": 101.3,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ELFN2",
+    "log2FC": -4.96,
+    "padj": "6.62e-05",
+    "baseMean": 280.4,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "NTNG1",
+    "log2FC": 4.84,
+    "padj": "2.47e-04",
+    "baseMean": 137.2,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "LEP",
+    "log2FC": 4.81,
+    "padj": "6.62e-05",
+    "baseMean": 296.5,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "EIF3FP1",
+    "log2FC": -4.76,
+    "padj": "8.07e-03",
+    "baseMean": 31.1,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "SNX18P7",
+    "log2FC": -4.7,
+    "padj": "1.97e-02",
+    "baseMean": 4.3,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "MIR6775",
+    "log2FC": -4.68,
+    "padj": "8.55e-04",
+    "baseMean": 6.3,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "PPP1R11",
+    "log2FC": 4.66,
+    "padj": "1.96e-02",
+    "baseMean": 3.0,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "UGT3A2",
+    "log2FC": -4.65,
+    "padj": "4.99e-03",
+    "baseMean": 51.3,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "LCAL1",
+    "log2FC": -4.64,
+    "padj": "1.19e-03",
+    "baseMean": 31.6,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ENSG00000287713",
+    "log2FC": -4.52,
+    "padj": "2.39e-02",
+    "baseMean": 4.7,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "MS4A1",
+    "log2FC": 4.46,
+    "padj": "6.57e-03",
+    "baseMean": 157.4,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "POU6F2",
+    "log2FC": -4.42,
+    "padj": "7.41e-03",
+    "baseMean": 46.2,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "SLCO1B1",
+    "log2FC": -4.37,
+    "padj": "7.55e-03",
+    "baseMean": 7.2,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "PSAT1",
+    "log2FC": -4.36,
+    "padj": "6.62e-05",
+    "baseMean": 330.8,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "OFCC1",
+    "log2FC": -4.36,
+    "padj": "7.19e-03",
+    "baseMean": 4.2,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "H3C2",
+    "log2FC": -4.32,
+    "padj": "9.88e-03",
+    "baseMean": 4.1,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "MROH6",
+    "log2FC": -4.3,
+    "padj": "6.88e-03",
+    "baseMean": 6.7,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ENSG00000248515",
+    "log2FC": -4.26,
+    "padj": "2.04e-02",
+    "baseMean": 7.5,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "LINC00648",
+    "log2FC": -4.25,
+    "padj": "1.49e-02",
+    "baseMean": 15.9,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "MRPS30-DT",
+    "log2FC": 4.24,
+    "padj": "1.55e-03",
+    "baseMean": 2147.4,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "ENSG00000204990",
+    "log2FC": -4.24,
+    "padj": "1.33e-02",
+    "baseMean": 3.2,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ELFN1-AS1",
+    "log2FC": -4.24,
+    "padj": "2.57e-02",
+    "baseMean": 101.2,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "TUBAP13",
+    "log2FC": -4.24,
+    "padj": "2.81e-02",
+    "baseMean": 4.9,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "MAGEA1",
+    "log2FC": -4.22,
+    "padj": "3.46e-02",
+    "baseMean": 9.9,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "CBY2",
+    "log2FC": -4.22,
+    "padj": "4.78e-02",
+    "baseMean": 3.1,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "LINC02181",
+    "log2FC": -4.2,
+    "padj": "1.94e-02",
+    "baseMean": 4.7,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ABCA12",
+    "log2FC": -4.19,
+    "padj": "2.58e-04",
+    "baseMean": 1119.9,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ZIC5",
+    "log2FC": -4.19,
+    "padj": "2.16e-03",
+    "baseMean": 21.8,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "CST5",
+    "log2FC": 4.19,
+    "padj": "1.69e-02",
+    "baseMean": 6.9,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "PCDH10",
+    "log2FC": -4.18,
+    "padj": "1.47e-02",
+    "baseMean": 197.0,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "AKAP8P1",
+    "log2FC": -4.15,
+    "padj": "4.76e-02",
+    "baseMean": 10.8,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "PDZRN4",
+    "log2FC": 4.14,
+    "padj": "8.76e-05",
+    "baseMean": 16.2,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "SPDYC",
+    "log2FC": -4.14,
+    "padj": "1.02e-03",
+    "baseMean": 30.9,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "PPM1E",
+    "log2FC": -4.12,
+    "padj": "6.62e-05",
+    "baseMean": 160.1,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "AACSP1",
+    "log2FC": -4.11,
+    "padj": "5.08e-03",
+    "baseMean": 14.7,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "PIP",
+    "log2FC": 4.11,
+    "padj": "6.54e-03",
+    "baseMean": 752.8,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "LINC01732",
+    "log2FC": -4.11,
+    "padj": "2.27e-02",
+    "baseMean": 4.4,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "SMR3B",
+    "log2FC": 4.1,
+    "padj": "1.68e-02",
+    "baseMean": 7.2,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "RN7SL255P",
+    "log2FC": -4.08,
+    "padj": "4.95e-02",
+    "baseMean": 7.7,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ENSG00000286212",
+    "log2FC": -4.02,
+    "padj": "3.93e-02",
+    "baseMean": 4.0,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "DES",
+    "log2FC": 4.0,
+    "padj": "4.45e-03",
+    "baseMean": 311.5,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "RPL21P55",
+    "log2FC": -4.0,
+    "padj": "3.80e-02",
+    "baseMean": 3.3,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "OR2B2",
+    "log2FC": -3.95,
+    "padj": "1.23e-02",
+    "baseMean": 12.2,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "CIBAR2",
+    "log2FC": -3.94,
+    "padj": "7.85e-03",
+    "baseMean": 13.8,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "NDP",
+    "log2FC": 3.92,
+    "padj": "6.54e-03",
+    "baseMean": 43.2,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "ENSG00000189229",
+    "log2FC": -3.91,
+    "padj": "2.38e-02",
+    "baseMean": 20.4,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ENSG00000286428",
+    "log2FC": -3.88,
+    "padj": "7.83e-04",
+    "baseMean": 13.8,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "IBSP",
+    "log2FC": -3.88,
+    "padj": "1.23e-02",
+    "baseMean": 75.2,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "FGA",
+    "log2FC": -3.88,
+    "padj": "3.93e-02",
+    "baseMean": 20.8,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "CYP4B1",
+    "log2FC": 3.84,
+    "padj": "1.18e-03",
+    "baseMean": 1831.1,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "CYP4F8",
+    "log2FC": 3.84,
+    "padj": "6.26e-03",
+    "baseMean": 257.1,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "ENSG00000260466",
+    "log2FC": -3.83,
+    "padj": "1.39e-04",
+    "baseMean": 18.3,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "SLC7A5",
+    "log2FC": -3.82,
+    "padj": "1.52e-05",
+    "baseMean": 10952.2,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ENSG00000288758",
+    "log2FC": -3.82,
+    "padj": "4.79e-02",
+    "baseMean": 7.0,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ARPP21",
+    "log2FC": -3.81,
+    "padj": "3.56e-02",
+    "baseMean": 51.7,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "NRCAM",
+    "log2FC": -3.8,
+    "padj": "6.51e-03",
+    "baseMean": 1246.1,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "LMNTD2",
+    "log2FC": 3.8,
+    "padj": "2.69e-02",
+    "baseMean": 10.6,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "ZFR2",
+    "log2FC": -3.79,
+    "padj": "1.35e-02",
+    "baseMean": 65.7,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "NMRAL2P",
+    "log2FC": -3.79,
+    "padj": "1.46e-02",
+    "baseMean": 22.8,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "ENSG00000290007",
+    "log2FC": 3.78,
+    "padj": "4.61e-03",
+    "baseMean": 27.8,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "ENSG00000229892",
+    "log2FC": 3.78,
+    "padj": "1.26e-02",
+    "baseMean": 9.8,
+    "direction": "Up-regulated"
+  },
+  {
+    "gene": "FGG",
+    "log2FC": -3.78,
+    "padj": "1.69e-02",
+    "baseMean": 7.7,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "OR2W6P",
+    "log2FC": -3.77,
+    "padj": "8.55e-04",
+    "baseMean": 15.6,
+    "direction": "Down-regulated"
+  },
+  {
+    "gene": "EREG",
+    "log2FC": -3.75,
+    "padj": "2.82e-03",
+    "baseMean": 58.2,
+    "direction": "Down-regulated"
+  }
+]

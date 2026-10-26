@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SuleimanBioinformaticsAnalysis | Multi-Omics Pipelines & Oncology Intelligence</title>
+  
+  <meta name="description" content="Production-grade transcriptomic pipelines, single-cell analysis, AlphaFold2 structural biology, AutoDock Vina molecular docking, and ClinVar clinical genomics." />
+  <meta name="keywords" content="Bioinformatics, RNA-Seq, TNBC, DESeq2, WGCNA, Seurat, AlphaFold, AutoDock Vina, ClinVar, Snakemake, Suleiman Hajizadeh" />
+  <meta name="author" content="Suleiman Hajizadeh" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="SuleimanBioinformaticsAnalysis | Multi-Omics & Oncology Hub" />
+  <meta property="og:description" content="Integrated computational genomics, AI protein folding, and clinical variant interpretation." />
+  <meta property="og:url" content="https://suleimanbioinformaticsanalysis.github.io/" />
+  <meta property="og:image" content="assets/logo-emblem.png" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="manifest" href="manifest.json" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- Ambient Atmospheric Glow -->
+  <div class="bg-atmosphere" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="#hero" class="brand-link" aria-label="SuleimanBioinformaticsAnalysis Home">
+        <img src="assets/logo-icon.svg" alt="SuleimanBioinformaticsAnalysis Logo" class="brand-logo-img" />
+        <span>Suleiman<span class="brand-title-accent">BioinformaticsAnalysis</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#overview" class="nav-link">Overview</a></li>
+          <li><a href="#studio" class="nav-link">Live Studio</a></li>
+          <li><a href="#single-cell" class="nav-link">Single-Cell</a></li>
+          <li><a href="#structural" class="nav-link">Structural AI</a></li>
+          <li><a href="#clinical" class="nav-link">ClinVar</a></li>
+          <li><a href="#manuscript" class="nav-link">Manuscript</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+          <span>Backend Vault</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="hero" class="hero container">
+      <div class="hero-badge-container">
+        <span class="badge">🧬 Multi-Omics Framework</span>
+        <span class="badge badge-purple">⚡ AlphaFold2 & AutoDock Vina</span>
+        <span class="badge badge-emerald">🏥 NIH ClinVar 609K SNPs</span>
+        <span class="badge">🐍 Snakemake Automated</span>
+      </div>
+
+      <h1 class="hero-title">
+        Multi-Scale <span class="hero-title-gradient">Bioinformatics & Oncology</span> Intelligence
+      </h1>
+      <p class="hero-subtitle">
+        Bridging high-throughput RNA-Seq transcriptomics, single-cell clustering, AI-driven 3D structural biology, and 609,000+ personal SNP clinical variant curation to decipher Triple-Negative Breast Cancer (TNBC) oncogenesis and therapeutics.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#studio" class="btn-primary">Explore Live Analytics</a>
+        <a href="#manuscript" class="btn-secondary">View Research Manuscript</a>
+        <a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer" class="btn-secondary">
+          Browse Secure Pipelines ↗
+        </a>
+      </div>
+
+      <!-- Quick Stats Counter -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-value">1,847</div>
+          <div class="stat-label">Significant DEGs</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">0.91</div>
+          <div class="stat-label">Nested CV AUC-ROC</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">9</div>
+          <div class="stat-label">scRNA-Seq Clusters</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">609K+</div>
+          <div class="stat-label">ClinVar SNPs Screened</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">-9.4</div>
+          <div class="stat-label">MK-2206 Docking (kcal/mol)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">92.4</div>
+          <div class="stat-label">AKT1 Mean pLDDT</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Architecture Callout Banner -->
+    <section class="architecture-section container">
+      <div class="architecture-banner">
+        <div class="arch-col">
+          <div class="arch-header">
+            <div class="arch-icon arch-icon-web">🌐</div>
+            <div>
+              <h2 class="arch-title">Public Visual Hub</h2>
+              <p class="arch-desc">SuleimanBioinformaticsAnalysis.github.io</p>
+            </div>
+          </div>
+          <p style="color:var(--text-secondary);font-size:0.92rem;">
+            The interactive scientific portal rendering client-side multi-omics filtering, single-cell marker exploration, 3D structural metrics, and publication figures without transmitting sensitive genomic sequences.
+          </p>
+          <ul class="arch-list">
+            <li>Interactive Differential Gene Expression table with real-time log2FC & FDR filtering</li>
+            <li>Single-Cell PBMC cluster markers, UMAP projections, and QC violin plots</li>
+            <li>AlphaFold2 structural confidence metrics and AutoDock Vina inhibitor binding analysis</li>
+            <li>ClinVar pharmacogenomics and disease susceptibility variants catalog</li>
+          </ul>
+        </div>
+
+        <div class="arch-col">
+          <div class="arch-header">
+            <div class="arch-icon arch-icon-vault">🔒</div>
+            <div>
+              <h2 class="arch-title">Secure Backend Vault</h2>
+              <p class="arch-desc">SuleimanBioinformaticsAnalysis (Private/Core Repo)</p>
+            </div>
+          </div>
+          <p style="color:var(--text-secondary);font-size:0.92rem;">
+            The computational engine and secure data repository containing high-throughput pipelines, raw sequencing FASTQs, alignments, full Snakemake automation, and clinical genomic databases.
+          </p>
+          <ul class="arch-list">
+            <li>Snakemake pipeline: FastQC -> Trimmomatic -> HISAT2 -> FeatureCounts -> DESeq2</li>
+            <li>WGCNA scale-free co-expression network analysis scripts (Turquoise module, AKT1 hub)</li>
+            <li>Nested 5-fold cross-validated Random Forest machine learning models</li>
+            <li>Raw 609K MyHeritage SNP arrays and NIH ClinVar automated annotator pipeline</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Live Studio Section -->
+    <section id="studio" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Interactive Analytics</span>
+        <h2 class="section-title">Multi-Omics Live Studio</h2>
+        <p class="section-desc">
+          Dynamically query, filter, and inspect verified computational outputs across transcriptomics, machine learning, structural biology, and clinical pharmacogenomics.
+        </p>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="tabs-nav" role="tablist" aria-label="Analytics Modules">
+        <button class="tab-btn active" data-tab="tab-deg" role="tab" aria-selected="true">Bulk RNA-Seq DEGs</button>
+        <button class="tab-btn" data-tab="tab-sc" role="tab" aria-selected="false">Single-Cell Seurat</button>
+        <button class="tab-btn" data-tab="tab-ml" role="tab" aria-selected="false">Machine Learning & WGCNA</button>
+        <button class="tab-btn" data-tab="tab-docking" role="tab" aria-selected="false">AlphaFold & Docking</button>
+        <button class="tab-btn" data-tab="tab-clinvar" role="tab" aria-selected="false">ClinVar Annotation</button>
+      </div>
+
+      <!-- Tab 1: DEGs -->
+      <div id="tab-deg" class="tab-panel active" role="tabpanel">
+        <div class="filter-bar">
+          <input type="search" id="deg-search" class="search-input" placeholder="Search gene (e.g., AKT1, CXCL13, ALB, GFAP)..." aria-label="Search candidate genes" />
+          <select id="deg-filter" class="filter-select" aria-label="Filter gene direction">
+            <option value="all">All Regulations</option>
+            <option value="up">Up-regulated in TNBC (|log2FC| > 1.5)</option>
+            <option value="down">Down-regulated in TNBC (|log2FC| > 1.5)</option>
+          </select>
+          <span id="deg-count" class="filter-count">Loading DEGs...</span>
+        </div>
+
+        <div tabindex="0" role="region" aria-labelledby="deg-table-caption" class="table-wrapper">
+          <table>
+            <caption id="deg-table-caption">GSE183947 Triple-Negative Breast Cancer Significant Differentially Expressed Genes (DESeq2, FDR &lt; 0.05)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Gene Symbol</th>
+                <th scope="col">log₂ Fold Change</th>
+                <th scope="col">Adjusted P-val (FDR)</th>
+                <th scope="col">Base Mean</th>
+                <th scope="col">Regulation</th>
+              </tr>
+            </thead>
+            <tbody id="degs-tbody">
+              <tr><td colspan="5" style="text-align:center;padding:2rem;">Loading data from data/degs.json...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 2: Single-Cell Seurat -->
+      <div id="tab-sc" class="tab-panel" role="tabpanel">
+        <div class="filter-bar">
+          <select id="sc-cluster-select" class="filter-select" aria-label="Filter by cluster">
+            <option value="all">All Clusters (0-8)</option>
+          </select>
+          <span class="filter-count">Single-Cell 10x Genomics PBMC Transcriptome</span>
+        </div>
+
+        <div tabindex="0" role="region" aria-labelledby="sc-table-caption" class="table-wrapper">
+          <table>
+            <caption id="sc-table-caption">Seurat scRNA-Seq Top Cluster Marker Genes & Differential Log-Fold Changes</caption>
+            <thead>
+              <tr>
+                <th scope="col">Marker Gene</th>
+                <th scope="col">Cluster ID</th>
+                <th scope="col">Avg log₂FC</th>
+                <th scope="col">Detection in Cluster (Pct.1)</th>
+                <th scope="col">Background Detection (Pct.2)</th>
+                <th scope="col">Adjusted P-val</th>
+              </tr>
+            </thead>
+            <tbody id="sc-tbody">
+              <tr><td colspan="6" style="text-align:center;padding:2rem;">Loading single-cell markers...</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="figures-grid">
+          <div class="figure-card">
+            <div class="figure-img-wrap">
+              <img src="assets/pbmc_final_annotation.png" alt="PBMC Final Cell Type Annotation UMAP" loading="lazy" />
+            </div>
+            <div class="figure-meta">
+              <h3 class="figure-title">PBMC Cell-Type UMAP Annotation</h3>
+              <p class="figure-desc">Resolved CD4+ T Cells, CD8+ T Cells, B Cells, NK Cells, CD14+ Monocytes, and Dendritic Cells.</p>
+            </div>
+          </div>
+
+          <div class="figure-card">
+            <div class="figure-img-wrap">
+              <img src="assets/pbmc_umap_islands.png" alt="Seurat PBMC Unsupervised Clusters" loading="lazy" />
+            </div>
+            <div class="figure-meta">
+              <h3 class="figure-title">Unsupervised Graph-Based Clusters</h3>
+              <p class="figure-desc">9 transcriptionally distinct cell clusters mapped in two-dimensional UMAP embedding.</p>
+            </div>
+          </div>
+
+          <div class="figure-card">
+            <div class="figure-img-wrap">
+              <img src="assets/pbmc_qc_violin.png" alt="Single-cell QC violin plots" loading="lazy" />
+            </div>
+            <div class="figure-meta">
+              <h3 class="figure-title">Quality Control Violin Plots</h3>
+              <p class="figure-desc">nFeature_RNA, nCount_RNA, and percent.mito thresholds filtering low-quality barcodes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 3: Machine Learning & WGCNA -->
+      <div id="tab-ml" class="tab-panel" role="tabpanel">
+        <div class="cards-2col">
+          <div class="info-card">
+            <div class="info-card-header">
+              <span style="font-size:1.5rem;">🤖</span>
+              <h3 class="info-card-title">Nested Cross-Validation Machine Learning</h3>
+            </div>
+            <p style="color:var(--text-secondary);font-size:0.92rem;margin-bottom:1rem;">
+              A Random Forest binary oncology classifier (TNBC vs. Non-TNBC) constructed with <strong>Nested 5-Fold Stratified Cross-Validation</strong> to completely eliminate optimistic information leakage during gene selection.
+            </p>
+            <ul class="arch-list" style="margin-bottom:1.5rem;">
+              <li><strong>AUC-ROC:</strong> 0.91 ± 0.03 across held-out outer validation splits</li>
+              <li><strong>Statistical Significance:</strong> P &lt; 0.001 under 1,000 label permutations</li>
+              <li><strong>Top Predictive Features:</strong> AKT1, MKI67, EGFR, ESR1, ERBB2</li>
+            </ul>
+            <div class="figure-card">
+              <div class="figure-img-wrap" style="height:280px;">
+                <img src="assets/ML_ROC_Curve_NestedCV.png" alt="Nested Cross Validation ROC Curve" loading="lazy" />
+              </div>
+              <div class="figure-meta">
+                <h4 class="figure-title">Mean ROC Curve Across Validation Folds</h4>
+                <p class="figure-desc">Shows high discrimination accuracy with low variance across all outer evaluation folds.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-header">
+              <span style="font-size:1.5rem;">🌐</span>
+              <h3 class="info-card-title">WGCNA Co-expression Network Architecture</h3>
+            </div>
+            <p style="color:var(--text-secondary);font-size:0.92rem;margin-bottom:1rem;">
+              Weighted Gene Co-expression Network Analysis identified co-regulated modules across 1,847 DEGs, constructing an adjacency matrix satisfying the biological scale-free topology criterion.
+            </p>
+            <ul class="arch-list" style="margin-bottom:1.5rem;">
+              <li><strong>Scale-free Topology Fit:</strong> R² = 0.87 at soft-thresholding power β = 12</li>
+              <li><strong>Key Module:</strong> "Turquoise Module" (n = 312 genes, r = 0.68, P &lt; 0.001)</li>
+              <li><strong>Master Hub Gene:</strong> <em>AKT1</em> kinase (kWithin = 47.3 connectivity)</li>
+              <li><strong>Pathway Overrepresentation:</strong> PI3K-Akt signaling, cell cycle progression, DNA repair</li>
+            </ul>
+            <div class="figure-card">
+              <div class="figure-img-wrap" style="height:280px;">
+                <img src="assets/Reactome_Pathway_Dotplot.png" alt="Reactome Pathway Enrichment Dotplot" loading="lazy" />
+              </div>
+              <div class="figure-meta">
+                <h4 class="figure-title">Reactome Pathway Enrichment Dotplot</h4>
+                <p class="figure-desc">Over-represented biological pathways sorted by GeneRatio, gene count, and adjusted p-value.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 4: Structural Modeling & Virtual Screening -->
+      <div id="tab-docking" class="tab-panel" role="tabpanel">
+        <div class="cards-2col" style="margin-bottom:2rem;">
+          <div class="info-card">
+            <div class="info-card-header">
+              <span style="font-size:1.5rem;">🧬</span>
+              <h3 class="info-card-title">AlphaFold2 3D Model: Human AKT1 (UniProt P31749)</h3>
+            </div>
+            <p style="color:var(--text-secondary);font-size:0.92rem;margin-bottom:1rem;">
+              Full-length 480-residue human AKT1 kinase was modeled utilizing AlphaFold2 neural network ensembles, exhibiting atomic-grade structural confidence across both the PH domain and the catalytic kinase domain.
+            </p>
+            <div class="stats-grid" style="margin-top:1rem;">
+              <div class="stat-card">
+                <div class="stat-value">92.4</div>
+                <div class="stat-label">Global Mean pLDDT</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">96.1</div>
+                <div class="stat-label">Catalytic Core pLDDT</div>
+              </div>
+              <div class="stat-card">
+                <div class="stat-value">94.2%</div>
+                <div class="stat-label">Ramachandran Favored</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-card-header">
+              <span style="font-size:1.5rem;">💊</span>
+              <h3 class="info-card-title">AutoDock Vina 1.2.5 Comparative Virtual Screening</h3>
+            </div>
+            <p style="color:var(--text-secondary);font-size:0.92rem;margin-bottom:1rem;">
+              Biophysical docking evaluated conformational binding energies of targeted allosteric versus ATP-competitive small-molecule inhibitors in the simulated AKT1 binding cavity.
+            </p>
+            <ul class="arch-list">
+              <li><strong>MK-2206 (Allosteric):</strong> Binding affinity <strong>-9.4 kcal/mol</strong>. Stabilizes closed PH-in inactive kinase conformation via π-stacking with Trp80 and hydrogen bonding with Asp292.</li>
+              <li><strong>Ipatasertib (ATP-competitive):</strong> Binding affinity <strong>-8.2 kcal/mol</strong>. Interacts with catalytic Lys179 and Glu234 in the ATP cleft.</li>
+              <li><strong>Capivasertib (AZD5363):</strong> Binding affinity <strong>-8.0 kcal/mol</strong>. Engages the Ala230 hinge region and Phe438.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div tabindex="0" role="region" aria-labelledby="docking-table-caption" class="table-wrapper">
+          <table>
+            <caption id="docking-table-caption">AutoDock Vina In Silico Binding Affinities and Molecular Interaction Profiles for Human AKT1 Kinase</caption>
+            <thead>
+              <tr>
+                <th scope="col">Inhibitor Candidate</th>
+                <th scope="col">Mechanism of Action</th>
+                <th scope="col">Binding Energy (ΔG)</th>
+                <th scope="col">Target Pocket</th>
+                <th scope="col">Key Interacting Residues</th>
+                <th scope="col">Clinical Development Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">MK-2206</th>
+                <td data-label="Mechanism">Allosteric Kinase Inhibitor</td>
+                <td data-label="Binding Energy" style="font-family:var(--font-mono);font-weight:700;color:var(--accent-emerald);">-9.4 kcal/mol</td>
+                <td data-label="Target Pocket">PH-Kinase interdomain allosteric cavity</td>
+                <td data-label="Key Residues">Trp80 (π-π), Asp292 (H-bond), Glu198</td>
+                <td data-label="Status">Phase II Clinical Trials</td>
+              </tr>
+              <tr>
+                <th scope="row">Ipatasertib</th>
+                <td data-label="Mechanism">ATP-Competitive Inhibitor</td>
+                <td data-label="Binding Energy" style="font-family:var(--font-mono);font-weight:700;color:var(--accent-cyan);">-8.2 kcal/mol</td>
+                <td data-label="Target Pocket">Catalytic ATP-binding cleft</td>
+                <td data-label="Key Residues">Lys179 (H-bond), Glu234, Met227</td>
+                <td data-label="Status">Phase III TNBC Combination Trial</td>
+              </tr>
+              <tr>
+                <th scope="row">Capivasertib</th>
+                <td data-label="Mechanism">Pan-AKT ATP-Competitive</td>
+                <td data-label="Binding Energy" style="font-family:var(--font-mono);font-weight:700;color:var(--accent-cyan);">-8.0 kcal/mol</td>
+                <td data-label="Target Pocket">Catalytic ATP hinge region</td>
+                <td data-label="Key Residues">Ala230 (Backbone H-bond), Phe438</td>
+                <td data-label="Status">FDA Approved (HR+ Breast Cancer)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Tab 5: ClinVar Clinical Genomics -->
+      <div id="tab-clinvar" class="tab-panel" role="tabpanel">
+        <div class="disclaimer-banner" role="alert">
+          <span style="font-size:1.3rem;">⚠️</span>
+          <div>
+            <strong>Automated Bioinformatics Annotation Notice:</strong>
+            This dashboard displays automated pipeline cross-references between 609,387 SNP microarray variants and the NIH ClinVar database. These variant classifications (Pharmacogenomics, Protective, Risk Factor) illustrate computational pipeline methodologies and do NOT constitute clinical medical diagnoses.
+          </div>
+        </div>
+
+        <div class="filter-bar">
+          <input type="search" id="clinvar-search" class="search-input" placeholder="Search by gene or RSID (e.g., CYP2C9, NAT2, RET, rs7900194)..." aria-label="Search ClinVar variants" />
+          <select id="clinvar-filter" class="filter-select" aria-label="Filter variant classification">
+            <option value="all">All Classifications</option>
+            <option value="Pharmacogenomics">Pharmacogenomics (Drug Metabolism)</option>
+            <option value="Protective">Protective Polymorphisms</option>
+            <option value="Risk Factor">Risk Factors</option>
+            <option value="Clinical Variant">Clinical / Conflicting Pathogenicity</option>
+          </select>
+          <span class="filter-count">609,387 Screened Microarray SNPs</span>
+        </div>
+
+        <div tabindex="0" role="region" aria-labelledby="clinvar-table-caption" class="table-wrapper">
+          <table>
+            <caption id="clinvar-table-caption">High-Confidence NIH ClinVar Cross-Referenced Genetic Variants (MyHeritage Cohort Pipeline)</caption>
+            <thead>
+              <tr>
+                <th scope="col">Gene Symbol</th>
+                <th scope="col">RSID</th>
+                <th scope="col">Genotype</th>
+                <th scope="col">Category</th>
+                <th scope="col">Clinical Significance</th>
+                <th scope="col">Phenotype / Clinical Actionability</th>
+              </tr>
+            </thead>
+            <tbody id="clinvar-tbody">
+              <tr><td colspan="6" style="text-align:center;padding:2rem;">Loading ClinVar variant data...</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- Research Manuscript Section -->
+    <section id="manuscript" class="section container">
+      <div class="section-header">
+        <span class="section-tag">Scientific Publication</span>
+        <h2 class="section-title">PLOS ONE Research Manuscript</h2>
+        <p class="section-desc">
+          Full computational paper detailing multi-scale oncology methods, reproducible pipelines, and pharmacological validation.
+        </p>
+      </div>
+
+      <div class="info-card" style="border-color:var(--border-accent);background:var(--bg-glass);">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1rem;margin-bottom:1rem;">
+          <div>
+            <span class="badge badge-purple" style="margin-bottom:0.75rem;">Peer-Reviewed Manuscript Submission</span>
+            <h3 style="font-size:1.35rem;font-weight:800;color:var(--text-primary);max-width:850px;">
+              Multi-Scale Computational Oncology Pipeline: AKT1 Hub Discovery in TNBC, AlphaFold2 Structural Prediction, and AutoDock Vina Inhibitor Characterization
+            </h3>
+            <p style="color:var(--accent-cyan);font-weight:600;margin-top:0.4rem;">
+              Lead Author: Suleiman Hajizadeh
+            </p>
+          </div>
+          <a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis/tree/main/manuscripts" target="_blank" rel="noopener noreferrer" class="btn-primary">
+            Read Full Draft in Backend ↗
+          </a>
+        </div>
+
+        <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.7;margin-bottom:1.5rem;">
+          <strong>Abstract:</strong> Triple-Negative Breast Cancer (TNBC) remains the most aggressive subtype of breast carcinoma, characterized by high heterogeneity and absence of targeted ER, PR, and HER2 receptors. In this study, we present an end-to-end multi-scale computational framework bridging bulk RNA-Seq transcriptomic profiling (GSE183947, 1,847 DEGs), weighted gene co-expression network analysis (WGCNA scale-free R² = 0.87, β = 12), single-cell PBMC microenvironment validation, neural network protein folding (AlphaFold2, mean pLDDT = 92.4), and biophysical molecular docking (AutoDock Vina 1.2.5). We isolate the <em>AKT1</em> kinase as the central master regulator within the oncogenic turquoise co-expression module (kWithin = 47.3). Biophysical virtual screening revealed that the allosteric inhibitor MK-2206 exhibits superior structural binding affinity (-9.4 kcal/mol) compared to ATP-competitive kinase inhibitors (-8.2 kcal/mol), providing actionable therapeutic insights for personalized TNBC intervention.
+        </p>
+
+        <div class="figures-grid">
+          <div class="figure-card">
+            <div class="figure-img-wrap">
+              <img src="assets/Overview-of-the-STAR-Fusion-pipeline-Illumina-RNA-Seq-reads-are-aligned-to-the-genome.png" alt="RNA-Seq Alignment and Fusion Pipeline" loading="lazy" />
+            </div>
+            <div class="figure-meta">
+              <h4 class="figure-title">Sequencing Read Alignment & Chimeric Transcripts</h4>
+              <p class="figure-desc">Dual alignment protocol resolving genomic junctions and gene fusion events in oncology cohorts.</p>
+            </div>
+          </div>
+
+          <div class="figure-card">
+            <div class="figure-img-wrap">
+              <img src="assets/rnaseq_result.png" alt="RNA-Seq Pipeline Quality and Output Correlation" loading="lazy" />
+            </div>
+            <div class="figure-meta">
+              <h4 class="figure-title">Transcriptomic Count Normalization</h4>
+              <p class="figure-desc">Variance-stabilizing transformation (VST) and dispersion estimations across biological replicates.</p>
+            </div>
+          </div>
+
+          <div class="figure-card">
+            <div class="figure-img-wrap">
+              <img src="assets/Netice.png" alt="Downstream Pathway and Molecular Integration" loading="lazy" />
+            </div>
+            <div class="figure-meta">
+              <h4 class="figure-title">Integrative Omics Synthesis</h4>
+              <p class="figure-desc">Coupling differential gene expression to actionable downstream structural targets.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for High-Res Image Inspection -->
+  <div id="figure-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-caption">
+    <div class="modal-content">
+      <button id="modal-close" class="modal-close" aria-label="Close image modal">&times;</button>
+      <img id="modal-img" class="modal-img" src="" alt="" />
+      <div id="modal-caption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#hero" class="brand-link">
+            <img src="assets/logo-icon.svg" alt="SuleimanBioinformaticsAnalysis Logo" class="brand-logo-img" />
+            <span>Suleiman<span class="brand-title-accent">BioinformaticsAnalysis</span></span>
+          </a>
+          <p>
+            High-performance computational biology ecosystem for oncology transcriptomics, single-cell clustering, AlphaFold2 modeling, and precision clinical genomics.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Repositories</h4>
+          <ul class="footer-links">
+            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis.github.io" target="_blank" rel="noopener noreferrer">Frontend Web Portal ↗</a></li>
+            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">Secure Backend Vault ↗</a></li>
+            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">Organization Profile ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Analytical Core</h4>
+          <ul class="footer-links">
+            <li><a href="#studio">Bulk RNA-Seq & DEGs</a></li>
+            <li><a href="#studio">Seurat scRNA-Seq</a></li>
+            <li><a href="#studio">Nested CV Random Forest</a></li>
+            <li><a href="#studio">AlphaFold2 AKT1 Kinase</a></li>
+            <li><a href="#studio">ClinVar 609K SNPs</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SuleimanBioinformaticsAnalysis. Maintained by Suleiman Hajizadeh. Distributed under the MIT License.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/app.js"></script>
+</body>
+</html>

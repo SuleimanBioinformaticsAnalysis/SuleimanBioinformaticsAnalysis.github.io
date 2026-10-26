@@ -1,0 +1,18 @@
+{
+  "totalDEGs": 1847,
+  "topUpDEGs": 923,
+  "topDownDEGs": 924,
+  "wgcnaHubs": "AKT1, EGFR, MKI67",
+  "wgcnaScaleFreeR2": 0.87,
+  "wgcnaTurquoiseModuleSize": 312,
+  "mlModel": "Nested 5-Fold Stratified Random Forest",
+  "mlAUC": 0.91,
+  "mlPermutationP": "< 0.001",
+  "scCellsProfiled": 2700,
+  "scClusters": 9,
+  "clinvarSNPsProfiled": 609387,
+  "clinvarMatches": 1284,
+  "alphaFoldTarget": "AKT1 (P31749)",
+  "alphaFoldMeanPLDDT": 92.4,
+  "topDockingAffinity": "-9.4 kcal/mol (MK-2206)"
+}
