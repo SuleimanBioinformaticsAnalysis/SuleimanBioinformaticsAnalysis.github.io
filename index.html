@@ -161,6 +161,67 @@
           </ul>
         </div>
       </div>
+
+      <!-- Snakemake Pipeline DAG Flow -->
+      <div class="pipeline-dag-container">
+        <h3 style="font-size:1.15rem;font-weight:700;margin-bottom:0.4rem;display:flex;align-items:center;gap:0.5rem;">
+          <span>🐍</span> Automated Snakemake Multi-Omics Execution Pipeline
+        </h3>
+        <p style="font-size:0.9rem;color:var(--text-secondary);">
+          Eight reproducible computational stages orchestrating raw FastQ processing, machine learning classification, structural AlphaFold2 folding, and clinical variant classification.
+        </p>
+
+        <div class="pipeline-dag-steps">
+          <div class="dag-step">
+            <span class="dag-step-number">Phase 1</span>
+            <span class="dag-step-title">Quality Control</span>
+            <span class="dag-step-tool">FastQC & Trimmomatic</span>
+            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;">Phred score &gt; 30, Illumina adapter excision.</p>
+          </div>
+          <div class="dag-step">
+            <span class="dag-step-number">Phase 2</span>
+            <span class="dag-step-title">Spliced Alignment</span>
+            <span class="dag-step-tool">HISAT2 & GRCh38</span>
+            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;">Hierarchical graph indexing, exon junction mapping.</p>
+          </div>
+          <div class="dag-step">
+            <span class="dag-step-number">Phase 3</span>
+            <span class="dag-step-title">Quantification</span>
+            <span class="dag-step-tool">featureCounts</span>
+            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;">Genomic feature overlap matrix generation.</p>
+          </div>
+          <div class="dag-step">
+            <span class="dag-step-number">Phase 4</span>
+            <span class="dag-step-title">Differential Expression</span>
+            <span class="dag-step-tool">DESeq2 (FDR &lt; 0.05)</span>
+            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;">Negative Binomial GLM & empirical Bayes shrinkage.</p>
+          </div>
+          <div class="dag-step">
+            <span class="dag-step-number">Phase 5</span>
+            <span class="dag-step-title">Co-Expression Networks</span>
+            <span class="dag-step-tool">WGCNA (Scale-Free R²=0.87)</span>
+            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;">Isolates Turquoise module & AKT1 kinase hub.</p>
+          </div>
+          <div class="dag-step">
+            <span class="dag-step-number">Phase 6</span>
+            <span class="dag-step-title">Machine Learning</span>
+            <span class="dag-step-tool">Random Forest (Nested CV)</span>
+            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;">AUC-ROC 0.91 ± 0.03 without feature leakage.</p>
+          </div>
+          <div class="dag-step">
+            <span class="dag-step-number">Phase 7</span>
+            <span class="dag-step-title">Single-Cell Resolution</span>
+            <span class="dag-step-tool">Seurat v4 (9 Clusters)</span>
+            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;">Tumor microenvironment leukocyte deconvolution.</p>
+          </div>
+          <div class="dag-step">
+            <span class="dag-step-number">Phase 8</span>
+            <span class="dag-step-title">Structural Allostery</span>
+            <span class="dag-step-tool">AlphaFold2 & AutoDock Vina</span>
+            <p style="font-size:0.8rem;color:var(--text-muted);margin-top:0.2rem;">MK-2206 -9.4 kcal/mol interdomain binding.</p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Interactive Live Studio Section -->
@@ -184,6 +245,38 @@
 
       <!-- Tab 1: DEGs -->
       <div id="tab-deg" class="tab-panel active" role="tabpanel">
+        <!-- Interactive Volcano Plot Card -->
+        <div class="volcano-card">
+          <div class="volcano-header">
+            <div>
+              <h3 class="volcano-title">Interactive Transcriptomic Volcano Plot</h3>
+              <p class="volcano-subtitle">Explore 80 key candidate genes from DESeq2 analysis. Hover over points for exact statistics, adjust cutoffs dynamically, or click any gene to inspect its row in the data matrix below.</p>
+            </div>
+            <div class="volcano-stats-pills">
+              <span id="volcano-up-pill" class="pill pill-up">Up: 0</span>
+              <span id="volcano-down-pill" class="pill pill-down">Down: 0</span>
+              <span id="volcano-ns-pill" class="pill pill-ns">Non-sig: 0</span>
+            </div>
+          </div>
+
+          <div class="volcano-controls">
+            <div class="control-group">
+              <label for="fc-thresh">Fold Change Cutoff (|log₂FC|): <strong id="fc-thresh-val">1.5</strong></label>
+              <input type="range" id="fc-thresh" min="0.5" max="3.0" step="0.1" value="1.5" class="slider" />
+            </div>
+            <div class="control-group">
+              <label for="p-thresh">Significance Cutoff (-log₁₀ FDR): <strong id="p-thresh-val">1.3</strong></label>
+              <input type="range" id="p-thresh" min="1.0" max="4.0" step="0.1" value="1.3" class="slider" />
+            </div>
+            <button id="reset-volcano" class="btn-sm btn-secondary">Reset Cutoffs</button>
+          </div>
+
+          <div class="volcano-chart-wrap">
+            <svg id="volcano-svg" viewBox="0 0 800 440" preserveAspectRatio="xMidYMid meet" aria-label="Interactive Volcano Plot of Differentially Expressed Genes"></svg>
+            <div id="volcano-tooltip" class="volcano-tooltip" style="display:none;" aria-hidden="true"></div>
+          </div>
+        </div>
+
         <div class="filter-bar">
           <input type="search" id="deg-search" class="search-input" placeholder="Search gene (e.g., AKT1, CXCL13, ALB, GFAP)..." aria-label="Search candidate genes" />
           <select id="deg-filter" class="filter-select" aria-label="Filter gene direction">
@@ -411,6 +504,61 @@
               </tr>
             </tbody>
           </table>
+        </div>
+
+        <!-- 3D Biomolecular Structure Exploration Card -->
+        <div class="structure-viewer-box">
+          <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1.5rem;margin-bottom:1.25rem;">
+            <div>
+              <span class="badge badge-purple" style="margin-bottom:0.5rem;">Mol* 3D Biomolecular Engine</span>
+              <h3 style="font-size:1.3rem;font-weight:800;color:var(--text-primary);">
+                Interactive 3D Molecular Architecture: AKT1 Kinase & MK-2206 Pocket
+              </h3>
+              <p style="font-size:0.92rem;color:var(--text-secondary);max-width:700px;margin-top:0.35rem;">
+                Explore atomic coordinates from both DeepMind AlphaFold2 neural network predictions and experimental X-ray diffraction (PDB 3O96, 2.70 Å resolution).
+              </p>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;">
+              <a href="assets/structures/AF-P31749-F1-model_v6.cif" download class="btn-sm btn-secondary">
+                📥 Download AF2 Model (.cif)
+              </a>
+              <a href="assets/structures/3O96.cif" download class="btn-sm btn-secondary">
+                📥 Download PDB 3O96 (.cif)
+              </a>
+              <a href="sidecar://science/biomolecular_structure_viewer/ui.html" class="sidecar-badge-link" title="Open Biomolecular Structure Viewer Sidecar">
+                <span>🔬</span> Open 3D Viewer Sidecar
+              </a>
+            </div>
+          </div>
+
+          <h4 style="font-size:1rem;font-weight:700;margin-top:1.5rem;color:var(--text-primary);">
+            Critical Biophysical Residue Annotations
+          </h4>
+          <div class="residues-grid">
+            <div class="residue-card">
+              <span class="residue-tag tag-trp80">Trp80 (PH Domain)</span>
+              <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:0.25rem;">
+                Forms a critical π-π aromatic stacking clamp with the naphthyridinone core of MK-2206. Holds the PH domain locked against the catalytic cleft.
+              </p>
+              <div style="font-size:0.8rem;color:var(--accent-orange);font-weight:600;margin-top:auto;">Allosteric Contact Anchor</div>
+            </div>
+
+            <div class="residue-card">
+              <span class="residue-tag tag-lys179">Lys179 (Catalytic Core)</span>
+              <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:0.25rem;">
+                Essential catalytic lysine that coordinates α- and β-phosphates of ATP. Targeted by ATP-competitive inhibitors like Ipatasertib.
+              </p>
+              <div style="font-size:0.8rem;color:var(--accent-cyan);font-weight:600;margin-top:auto;">Orthosteric ATP Coordinator</div>
+            </div>
+
+            <div class="residue-card">
+              <span class="residue-tag tag-asp292">Asp292 (DFG Motif)</span>
+              <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:0.25rem;">
+                Conserved catalytic aspartate forming direct hydrogen bonds with MK-2206. Coordinates Mg²⁺ in active kinase states.
+              </p>
+              <div style="font-size:0.8rem;color:var(--accent-purple);font-weight:600;margin-top:auto;">Active Site Coordinator</div>
+            </div>
+          </div>
         </div>
       </div>
 
