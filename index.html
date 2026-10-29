@@ -44,10 +44,8 @@
       <nav aria-label="Main Navigation">
         <ul class="nav-links">
           <li><a href="#overview" class="nav-link">Overview</a></li>
+          <li><a href="#data-access" class="nav-link">Data Access</a></li>
           <li><a href="#studio" class="nav-link">Live Studio</a></li>
-          <li><a href="#single-cell" class="nav-link">Single-Cell</a></li>
-          <li><a href="#structural" class="nav-link">Structural AI</a></li>
-          <li><a href="#clinical" class="nav-link">ClinVar</a></li>
           <li><a href="#manuscript" class="nav-link">Manuscript</a></li>
         </ul>
       </nav>
@@ -56,11 +54,14 @@
         <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
           <span id="theme-icon">☀️</span>
         </button>
+        <a href="mailto:suleyman.hacizade1@gmail.com?subject=Private%20Data%20%26%20Repository%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" class="btn-secondary" style="padding:0.5rem 0.95rem;font-size:0.85rem;" title="Request access to private research datasets via email">
+          <span>📧 Request Access</span>
+        </a>
         <a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer" class="btn-primary">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
           </svg>
-          <span>Backend Vault</span>
+          <span>🔒 Private Vault</span>
         </a>
       </div>
     </div>
@@ -73,7 +74,7 @@
         <span class="badge">🧬 Multi-Omics Framework</span>
         <span class="badge badge-purple">⚡ AlphaFold2 & AutoDock Vina</span>
         <span class="badge badge-emerald">🏥 NIH ClinVar 609K SNPs</span>
-        <span class="badge">🐍 Snakemake Automated</span>
+        <span class="badge" style="border-color:rgba(249,115,22,0.45);color:var(--accent-orange);">🔒 Core Research Data: Private</span>
       </div>
 
       <h1 class="hero-title">
@@ -85,9 +86,11 @@
 
       <div class="hero-cta">
         <a href="#studio" class="btn-primary">Explore Live Analytics</a>
-        <a href="#manuscript" class="btn-secondary">View Research Manuscript</a>
-        <a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer" class="btn-secondary">
-          Browse Secure Pipelines ↗
+        <a href="mailto:suleyman.hacizade1@gmail.com?subject=Private%20Data%20%26%20Repository%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" class="btn-email-access">
+          <span>📧</span> Request Private Data Access (suleyman.hacizade1@gmail.com)
+        </a>
+        <a href="#data-access" class="btn-secondary">
+          🔒 Data Access Policy
         </a>
       </div>
 
@@ -121,14 +124,14 @@
     </section>
 
     <!-- Architecture Callout Banner -->
-    <section class="architecture-section container">
+    <section id="overview" class="architecture-section container">
       <div class="architecture-banner">
         <div class="arch-col">
           <div class="arch-header">
             <div class="arch-icon arch-icon-web">🌐</div>
             <div>
               <h2 class="arch-title">Public Visual Hub</h2>
-              <p class="arch-desc">SuleimanBioinformaticsAnalysis.github.io</p>
+              <p class="arch-desc">SuleimanBioinformaticsAnalysis.github.io (Public Portal)</p>
             </div>
           </div>
           <p style="color:var(--text-secondary);font-size:0.92rem;">
@@ -146,19 +149,51 @@
           <div class="arch-header">
             <div class="arch-icon arch-icon-vault">🔒</div>
             <div>
-              <h2 class="arch-title">Secure Backend Vault</h2>
-              <p class="arch-desc">SuleimanBioinformaticsAnalysis (Private/Core Repo)</p>
+              <h2 class="arch-title">Secure Backend Vault (Private)</h2>
+              <p class="arch-desc">SuleimanBioinformaticsAnalysis — Restricted Access</p>
             </div>
           </div>
           <p style="color:var(--text-secondary);font-size:0.92rem;">
-            The computational engine and secure data repository containing high-throughput pipelines, raw sequencing FASTQs, alignments, full Snakemake automation, and clinical genomic databases.
+            The core computational repository and raw genomic data vault are <strong>Private</strong> to protect patient/personal genomic privacy and research pipelines. Authorized access is available upon email request.
           </p>
           <ul class="arch-list">
             <li>Snakemake pipeline: FastQC -> Trimmomatic -> HISAT2 -> FeatureCounts -> DESeq2</li>
             <li>WGCNA scale-free co-expression network analysis scripts (Turquoise module, AKT1 hub)</li>
             <li>Nested 5-fold cross-validated Random Forest machine learning models</li>
-            <li>Raw 609K MyHeritage SNP arrays and NIH ClinVar automated annotator pipeline</li>
+            <li>Raw 609K MyHeritage SNP arrays, 53-page LLM Wiki, and NIH ClinVar annotator pipeline</li>
           </ul>
+          <div style="margin-top:0.5rem;">
+            <a href="mailto:suleyman.hacizade1@gmail.com?subject=Private%20Data%20%26%20Repository%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" style="color:var(--accent-emerald);font-weight:700;font-size:0.9rem;text-decoration:none;">
+              📧 Request Repository Access: suleyman.hacizade1@gmail.com ↗
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dedicated Private Data Access Callout Card (Bilingual EN / AZ) -->
+      <div id="data-access" class="private-access-card" role="region" aria-label="Private Research Data and Repository Access">
+        <div class="private-access-header">
+          <div class="private-access-title">
+            <span>🔒</span>
+            <span>Private Research Data &amp; Repository Access / Məxfi Tədqiqat Məlumatları və Giriş Müraciəti</span>
+          </div>
+          <a href="mailto:suleyman.hacizade1@gmail.com?subject=Private%20Data%20%26%20Repository%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" class="btn-email-access">
+            <span>📧</span> suleyman.hacizade1@gmail.com
+          </a>
+        </div>
+
+        <div class="private-access-grid">
+          <div class="private-lang-box">
+            <strong>🇬🇧 English — Data Access Policy:</strong><br />
+            All primary raw sequencing datasets (FASTQ/BAM), full transcriptomic count matrices, 609K personal SNP microarray genotypes, automated Snakemake workflows, and the core backend repository (<code>SuleimanBioinformaticsAnalysis</code>) in this organization are <strong>Private</strong>. If you would like to request access for academic research, peer review, or scientific collaboration, please contact via email:<br />
+            📧 <a href="mailto:suleyman.hacizade1@gmail.com?subject=Private%20Data%20%26%20Repository%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" style="color:var(--accent-emerald);font-weight:700;font-family:var(--font-mono);">suleyman.hacizade1@gmail.com</a>
+          </div>
+
+          <div class="private-lang-box">
+            <strong>🇦🇿 Azərbaycan dili — Məlumatlara Giriş Müraciəti:</strong><br />
+            Bu təşkilatdakı bütün əsas tədqiqat dataları (xam sekvensiya oxunuşları, 609K şəxsi SNP genotip massivləri, hesablama boru xətləri) və əsas baza repozitoriyası (<code>SuleimanBioinformaticsAnalysis</code>) <strong>məxfidir (Private)</strong>. Əgər elmi tədqiqat, akademik əməkdaşlıq və ya tanışlıq məqsədilə giriş (access) əldə etmək istəyirsinizsə, elektron poçt ünvanıma müraciət edə bilərsiniz:<br />
+            📧 <a href="mailto:suleyman.hacizade1@gmail.com?subject=Private%20Data%20%26%20Repository%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" style="color:var(--accent-emerald);font-weight:700;font-family:var(--font-mono);">suleyman.hacizade1@gmail.com</a>
+          </div>
         </div>
       </div>
 
@@ -626,13 +661,21 @@
               Lead Author: Suleiman Hajizadeh
             </p>
           </div>
-          <a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis/tree/main/manuscripts" target="_blank" rel="noopener noreferrer" class="btn-primary">
-            Read Full Draft in Backend ↗
-          </a>
+          <div style="display:flex;gap:0.75rem;flex-wrap:wrap;align-items:center;">
+            <a href="mailto:suleyman.hacizade1@gmail.com?subject=Manuscript%20%26%20Private%20Data%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" class="btn-email-access" style="padding:0.55rem 1.1rem;font-size:0.88rem;">
+              <span>📧</span> Request Full Draft & Data
+            </a>
+            <a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis/tree/main/manuscripts" target="_blank" rel="noopener noreferrer" class="btn-primary" style="padding:0.55rem 1.1rem;font-size:0.88rem;">
+              <span>🔒</span> Backend Vault ↗
+            </a>
+          </div>
         </div>
 
         <p style="color:var(--text-secondary);font-size:0.95rem;line-height:1.7;margin-bottom:1.5rem;">
           <strong>Abstract:</strong> Triple-Negative Breast Cancer (TNBC) remains the most aggressive subtype of breast carcinoma, characterized by high heterogeneity and absence of targeted ER, PR, and HER2 receptors. In this study, we present an end-to-end multi-scale computational framework bridging bulk RNA-Seq transcriptomic profiling (GSE183947, 1,847 DEGs), weighted gene co-expression network analysis (WGCNA scale-free R² = 0.87, β = 12), single-cell PBMC microenvironment validation, neural network protein folding (AlphaFold2, mean pLDDT = 92.4), and biophysical molecular docking (AutoDock Vina 1.2.5). We isolate the <em>AKT1</em> kinase as the central master regulator within the oncogenic turquoise co-expression module (kWithin = 47.3). Biophysical virtual screening revealed that the allosteric inhibitor MK-2206 exhibits superior structural binding affinity (-9.4 kcal/mol) compared to ATP-competitive kinase inhibitors (-8.2 kcal/mol), providing actionable therapeutic insights for personalized TNBC intervention.
+        </p>
+        <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1.5rem;">
+          <em>Note:</em> Raw sequencing reads, BAM alignments, and reproducible Snakemake pipelines are preserved in the <strong>Private Core Vault</strong>. Peer reviewers and academic researchers may request complete access by contacting <a href="mailto:suleyman.hacizade1@gmail.com?subject=Reviewer%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" style="color:var(--accent-emerald);font-weight:600;">suleyman.hacizade1@gmail.com</a>.
         </p>
 
         <div class="figures-grid">
@@ -691,13 +734,18 @@
           <p>
             High-performance computational biology ecosystem for oncology transcriptomics, single-cell clustering, AlphaFold2 modeling, and precision clinical genomics.
           </p>
+          <p style="margin-top:0.75rem;font-size:0.85rem;color:var(--accent-emerald);">
+            🔒 <strong>Private Data &amp; Access Requests:</strong><br />
+            <a href="mailto:suleyman.hacizade1@gmail.com?subject=Private%20Data%20%26%20Repository%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" style="color:var(--accent-emerald);text-decoration:underline;font-family:var(--font-mono);">suleyman.hacizade1@gmail.com</a>
+          </p>
         </div>
 
         <div class="footer-col">
-          <h4>Repositories</h4>
+          <h4>Repositories &amp; Access</h4>
           <ul class="footer-links">
             <li><a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis.github.io" target="_blank" rel="noopener noreferrer">Frontend Web Portal ↗</a></li>
-            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">Secure Backend Vault ↗</a></li>
+            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">🔒 Secure Backend Vault (Private) ↗</a></li>
+            <li><a href="mailto:suleyman.hacizade1@gmail.com?subject=Private%20Data%20%26%20Repository%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis">📧 Request Data Access</a></li>
             <li><a href="https://github.com/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">Organization Profile ↗</a></li>
           </ul>
         </div>
