@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>WGCNA Co-expression Networks &amp; Machine Learning (AUC 0.91) | SuleimanBioinformaticsAnalysis</title>
+  <meta name="title" content="WGCNA Co-expression Networks &amp; Machine Learning (AUC 0.91) | SuleimanBioinformaticsAnalysis" />
+  <meta name="description" content="Scale-free co-expression network analysis isolating the AKT1 oncogenic hub in TNBC and Nested 5-Fold Cross-Validation Random Forest classifier (AUC-ROC 0.91)." />
+  <meta name="keywords" content="WGCNA, Machine Learning, Nested Cross-Validation, Random Forest, AUC-ROC, AKT1, Hub Gene, Scale-Free Topology, Turquoise Module, Triple-Negative Breast Cancer, SuleimanBioinformaticsAnalysis" />
+  <meta name="author" content="Suleiman Hajizadeh" />
+  <meta name="publisher" content="SuleimanBioinformaticsAnalysis" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- Canonical & Alternates -->
+  <link rel="canonical" href="https://suleimanbioinformaticsanalysis.github.io/wgcna-ml/" />
+  <link rel="alternate" hreflang="en" href="https://suleimanbioinformaticsanalysis.github.io/wgcna-ml/" />
+  <link rel="alternate" hreflang="x-default" href="https://suleimanbioinformaticsanalysis.github.io/wgcna-ml/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="SuleimanBioinformaticsAnalysis" />
+  <meta property="og:title" content="WGCNA Co-expression Networks &amp; Machine Learning | SuleimanBioinformaticsAnalysis" />
+  <meta property="og:description" content="Unbiased Nested CV Random Forest oncology classifier (AUC 0.91) and AKT1 master hub discovery via WGCNA scale-free networks." />
+  <meta property="og:url" content="https://suleimanbioinformaticsanalysis.github.io/wgcna-ml/" />
+  <meta property="og:image" content="https://suleimanbioinformaticsanalysis.github.io/assets/ML_ROC_Curve_NestedCV.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WGCNA Co-expression Networks &amp; Machine Learning (AUC 0.91)" />
+  <meta name="twitter:description" content="Eliminating feature selection data leakage in high-dimensional oncology transcriptomics." />
+  <meta name="twitter:image" content="https://suleimanbioinformaticsanalysis.github.io/assets/ML_ROC_Curve_NestedCV.png" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="../favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../manifest.json" />
+  <meta name="theme-color" content="#f97316" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://suleimanbioinformaticsanalysis.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "WGCNA & Machine Learning",
+            "item": "https://suleimanbioinformaticsanalysis.github.io/wgcna-ml/"
+          }
+        ]
+      },
+      {
+        "@type": "ScholarlyArticle",
+        "headline": "Nested Cross-Validation Machine Learning & WGCNA Co-expression Architecture in TNBC",
+        "description": "Mathematical framework of scale-free gene network construction and zero-leakage cross-validated ensemble classification.",
+        "author": {
+          "@type": "Person",
+          "name": "Suleiman Hajizadeh"
+        },
+        "publisher": {
+          "@type": "ResearchOrganization",
+          "name": "SuleimanBioinformaticsAnalysis"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Ambient Atmospheric Glow -->
+  <div class="bg-atmosphere" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="../index.html" class="brand-link" aria-label="SuleimanBioinformaticsAnalysis Home">
+        <img src="../assets/logo-icon.svg" alt="SuleimanBioinformaticsAnalysis Logo" class="brand-logo-img" />
+        <span>Suleiman<span class="brand-title-accent">BioinformaticsAnalysis</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../bulk-rnaseq/index.html" class="nav-link">Bulk RNA-Seq</a></li>
+          <li><a href="../single-cell/index.html" class="nav-link">Single-Cell</a></li>
+          <li><a href="index.html" class="nav-link active">WGCNA &amp; ML</a></li>
+          <li><a href="../structural-biology/index.html" class="nav-link">Structural AI</a></li>
+          <li><a href="../clinical-genomics/index.html" class="nav-link">ClinVar</a></li>
+          <li><a href="../data-access/index.html" class="nav-link">Data Access</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="mailto:suleyman.hacizade1@gmail.com?subject=WGCNA%20ML%20Code%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" class="btn-secondary" style="padding:0.5rem 0.95rem;font-size:0.85rem;">
+          <span>📧 Request Access</span>
+        </a>
+        <a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <span>🔒 Backend Vault</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Breadcrumbs Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item"><a href="../index.html#studio">Live Studio</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item active" aria-current="page">WGCNA &amp; Machine Learning</li>
+      </ol>
+    </nav>
+
+    <!-- Pillar Hero Header -->
+    <section class="pillar-hero">
+      <div class="pillar-badge-group">
+        <span class="badge">🌐 Systems Biology</span>
+        <span class="badge badge-purple">⚡ Scale-Free Topology R² = 0.87</span>
+        <span class="badge badge-emerald">🤖 Nested 5-Fold CV (AUC 0.91)</span>
+        <span class="badge">AKT1 Master Hub</span>
+      </div>
+
+      <h1 class="pillar-title">
+        WGCNA Co-expression Networks &amp; <span class="hero-title-gradient">Zero-Leakage ML</span>
+      </h1>
+      <p class="pillar-subtitle">
+        System-level mathematical mapping of transcriptomic interaction topologies, isolation of the oncogenic turquoise co-expression module, and rigorous Random Forest oncology classification eliminating feature leakage.
+      </p>
+
+      <!-- Quick Navigation Sub-Bar -->
+      <nav class="pillar-nav-pills" aria-label="Pillar Sub-Navigation">
+        <a href="../index.html" class="nav-pill-link"><span>🏠</span> Main Hub</a>
+        <a href="../bulk-rnaseq/index.html" class="nav-pill-link"><span>🧬</span> Bulk RNA-Seq</a>
+        <a href="../single-cell/index.html" class="nav-pill-link"><span>🔬</span> Single-Cell Seurat</a>
+        <a href="index.html" class="nav-pill-link active"><span>🤖</span> WGCNA &amp; ML</a>
+        <a href="../structural-biology/index.html" class="nav-pill-link"><span>⚡</span> AlphaFold &amp; Docking</a>
+        <a href="../clinical-genomics/index.html" class="nav-pill-link"><span>🏥</span> ClinVar 609K</a>
+        <a href="../manuscript/index.html" class="nav-pill-link"><span>📄</span> Manuscript</a>
+        <a href="../data-access/index.html" class="nav-pill-link"><span>🔒</span> Data Access</a>
+      </nav>
+    </section>
+
+    <!-- Deep Scientific Content & Methodology -->
+    <section class="section" style="padding-top:0;">
+      <div class="cards-2col" style="margin-bottom:2rem;">
+        <div class="info-card">
+          <div class="info-card-header">
+            <span style="font-size:1.5rem;">🤖</span>
+            <h2 class="info-card-title">Nested Cross-Validation Machine Learning</h2>
+          </div>
+          <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.65;margin-bottom:1rem;">
+            A common failure mode in computational biology is feature selection on full datasets prior to cross-validation. Our pipeline enforces strict <strong>Nested 5-Fold Stratified Cross-Validation</strong>:
+          </p>
+          <div class="seo-knowledge-box">
+            <h4>Leakage-Free Validation Architecture</h4>
+            Feature selection and hyperparameter tuning occur exclusively inside inner folds. Outer folds remain strictly sequestered for independent evaluation, yielding an authentic generalizable <strong>AUC-ROC = 0.91 &plusmn; 0.03</strong>.
+          </div>
+          <ul class="arch-list" style="margin-top:1rem;">
+            <li><strong>Classification Target:</strong> TNBC vs. Non-TNBC healthy mammary tissue.</li>
+            <li><strong>Permutation Testing:</strong> 1,000 label shuffles proving statistical significance at <strong>P &lt; 0.001</strong>.</li>
+            <li><strong>Top Selected Biomarkers:</strong> <em>AKT1</em>, <em>MKI67</em>, <em>EGFR</em>, <em>ESR1</em>, <em>ERBB2</em>.</li>
+          </ul>
+          <div class="figure-card" style="margin-top:1.5rem;">
+            <div class="figure-img-wrap" style="height:260px;">
+              <img src="../assets/ML_ROC_Curve_NestedCV.png" alt="Nested Cross Validation ROC Curve" loading="lazy" />
+            </div>
+            <div class="figure-meta">
+              <h3 class="figure-title">Mean ROC Curve Across Validation Folds</h3>
+              <p class="figure-desc">Shows high discrimination accuracy with low variance across all outer evaluation folds.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header">
+            <span style="font-size:1.5rem;">🌐</span>
+            <h2 class="info-card-title">WGCNA Scale-Free Topology &amp; AKT1 Hub Discovery</h2>
+          </div>
+          <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.65;margin-bottom:1rem;">
+            Biological networks follow power-law connectivity <code>P(k) ~ k^-&gamma;</code>. Using soft-thresholding power <code>&beta; = 12</code>, adjacency satisfied scale-free topology fit (<code>R&sup2; = 0.87</code>):
+          </p>
+          <ul class="arch-list" style="margin-bottom:1.5rem;">
+            <li><strong>Turquoise Module (n = 312 genes):</strong> Highest clinical trait correlation (<code>r = 0.68, P &lt; 0.001</code>).</li>
+            <li><strong>AKT1 Intramodular Connectivity:</strong> <code>kWithin = 47.3</code>, establishing it as the master regulatory hub kinase.</li>
+            <li><strong>Pathway Overrepresentation:</strong> Hyperactivation of PI3K-Akt signaling, cell cycle G1/S transitions, and DNA damage response.</li>
+          </ul>
+          <div class="figure-card" style="margin-top:1.5rem;">
+            <div class="figure-img-wrap" style="height:260px;">
+              <img src="../assets/Reactome_Pathway_Dotplot.png" alt="Reactome Pathway Enrichment Dotplot" loading="lazy" />
+            </div>
+            <div class="figure-meta">
+              <h3 class="figure-title">Reactome Pathway Enrichment Dotplot</h3>
+              <p class="figure-desc">Over-represented biological pathways sorted by GeneRatio, gene count, and adjusted p-value.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand-link">
+            <img src="../assets/logo-icon.svg" alt="SuleimanBioinformaticsAnalysis Logo" class="brand-logo-img" />
+            <span>Suleiman<span class="brand-title-accent">BioinformaticsAnalysis</span></span>
+          </a>
+          <p>
+            High-performance computational biology ecosystem for oncology transcriptomics, single-cell clustering, AlphaFold2 modeling, and precision clinical genomics.
+          </p>
+          <p style="margin-top:0.75rem;font-size:0.85rem;color:var(--accent-emerald);">
+            🔒 <strong>Private Data &amp; Access Requests:</strong><br />
+            <a href="mailto:suleyman.hacizade1@gmail.com?subject=WGCNA%20ML%20Code%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" style="color:var(--accent-emerald);text-decoration:underline;font-family:var(--font-mono);">suleyman.hacizade1@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Repositories &amp; Access</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Central Web Portal ↗</a></li>
+            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">🔒 Secure Backend Vault (Private) ↗</a></li>
+            <li><a href="../data-access/index.html">Data Access Policy</a></li>
+            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">Organization Profile ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Deep Pillar Pages</h4>
+          <ul class="footer-links">
+            <li><a href="../bulk-rnaseq/index.html">Bulk RNA-Seq &amp; DEGs</a></li>
+            <li><a href="../single-cell/index.html">Single-Cell Seurat</a></li>
+            <li><a href="index.html">WGCNA &amp; Machine Learning</a></li>
+            <li><a href="../structural-biology/index.html">AlphaFold2 AKT1 &amp; Docking</a></li>
+            <li><a href="../clinical-genomics/index.html">ClinVar 609K SNPs</a></li>
+            <li><a href="../manuscript/index.html">PLOS ONE Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SuleimanBioinformaticsAnalysis. Maintained by Suleiman Hajizadeh. Distributed under the MIT License.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/app.js"></script>
+</body>
+</html>

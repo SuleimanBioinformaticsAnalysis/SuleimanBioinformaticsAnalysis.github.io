@@ -1300,3 +1300,200 @@ tbody tr:hover th {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(16, 185, 129, 0.35);
 }
+
+/* ==========================================================================
+   Architect-Grade SEO, Breadcrumbs & Pillar Page Design Elements
+   ========================================================================== */
+
+/* Breadcrumb Navigation */
+.breadcrumb-nav {
+  padding-block: 1rem 0.5rem;
+  margin-top: 4.5rem;
+}
+
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.breadcrumb-item a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.breadcrumb-item a:hover {
+  color: var(--accent-orange);
+}
+
+.breadcrumb-item.active {
+  color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.breadcrumb-separator {
+  color: var(--border-subtle);
+  user-select: none;
+}
+
+/* Pillar Page Hero Header */
+.pillar-hero {
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+}
+
+.pillar-badge-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.25rem;
+}
+
+.pillar-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.pillar-subtitle {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  max-width: 860px;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+/* Pillar Subnav Navigation Bar */
+.pillar-nav-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  padding: 0.85rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  margin-bottom: 2.5rem;
+}
+
+.nav-pill-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-full);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border: 1px solid transparent;
+  transition: all var(--transition-fast);
+}
+
+.nav-pill-link:hover {
+  color: var(--text-primary);
+  background: var(--bg-tertiary);
+  border-color: var(--border-accent);
+}
+
+.nav-pill-link.active {
+  color: #ffffff;
+  background: var(--gradient-brand);
+  border-color: transparent;
+}
+
+/* FAQ Accordion Section for Rich Snippets (SEO) */
+.faq-section {
+  padding-block: 4rem 2rem;
+}
+
+.faq-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.faq-item {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  transition: border-color var(--transition-normal);
+}
+
+.faq-item:hover {
+  border-color: var(--border-accent);
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+  list-style: none;
+  user-select: none;
+}
+
+.faq-question::-webkit-details-marker {
+  display: none;
+}
+
+.faq-question::after {
+  content: "＋";
+  font-size: 1.2rem;
+  color: var(--accent-orange);
+  transition: transform var(--transition-fast);
+}
+
+details[open] .faq-question::after {
+  content: "−";
+  color: var(--accent-cyan);
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.faq-answer strong {
+  color: var(--text-primary);
+}
+
+.faq-answer a {
+  color: var(--accent-cyan);
+  text-decoration: underline;
+}
+
+/* SEO Content Callout */
+.seo-knowledge-box {
+  background: var(--bg-tertiary);
+  border-left: 4px solid var(--accent-orange);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1.25rem 1.5rem;
+  margin-block: 1.5rem;
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.seo-knowledge-box h4 {
+  color: var(--text-primary);
+  margin-bottom: 0.4rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}

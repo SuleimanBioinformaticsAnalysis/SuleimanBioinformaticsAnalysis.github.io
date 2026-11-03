@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>Single-Cell RNA-Seq (Seurat v4) Transcriptomics | SuleimanBioinformaticsAnalysis</title>
+  <meta name="title" content="Single-Cell RNA-Seq (Seurat v4) Transcriptomics | SuleimanBioinformaticsAnalysis" />
+  <meta name="description" content="High-resolution single-cell PBMC transcriptomics (10x Genomics, Seurat v4): 9 graph-based clusters, UMAP projections, QC violin filtering, and cell-type deconvolution." />
+  <meta name="keywords" content="Single-Cell RNA-Seq, Seurat, scRNA-Seq, 10x Genomics, PBMC, UMAP, Louvain Clustering, Cell Type Annotation, CD4 T Cells, CD8 T Cells, B Cells, NK Cells, Monocytes, SuleimanBioinformaticsAnalysis" />
+  <meta name="author" content="Suleiman Hajizadeh" />
+  <meta name="publisher" content="SuleimanBioinformaticsAnalysis" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- Canonical & Alternates -->
+  <link rel="canonical" href="https://suleimanbioinformaticsanalysis.github.io/single-cell/" />
+  <link rel="alternate" hreflang="en" href="https://suleimanbioinformaticsanalysis.github.io/single-cell/" />
+  <link rel="alternate" hreflang="x-default" href="https://suleimanbioinformaticsanalysis.github.io/single-cell/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="SuleimanBioinformaticsAnalysis" />
+  <meta property="og:title" content="Single-Cell RNA-Seq (Seurat v4) Transcriptomics | SuleimanBioinformaticsAnalysis" />
+  <meta property="og:description" content="Cellular heterogeneity deconvolution across 9 leukocyte clusters in 2D UMAP space with lineage marker identification." />
+  <meta property="og:url" content="https://suleimanbioinformaticsanalysis.github.io/single-cell/" />
+  <meta property="og:image" content="https://suleimanbioinformaticsanalysis.github.io/assets/pbmc_final_annotation.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Single-Cell RNA-Seq (Seurat v4) Transcriptomics | SuleimanBioinformaticsAnalysis" />
+  <meta name="twitter:description" content="10x Genomics Chromium single-cell clustering, marker gene detection, and QC violin plots." />
+  <meta name="twitter:image" content="https://suleimanbioinformaticsanalysis.github.io/assets/pbmc_final_annotation.png" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="../favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../manifest.json" />
+  <meta name="theme-color" content="#f97316" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://suleimanbioinformaticsanalysis.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Single-Cell Seurat",
+            "item": "https://suleimanbioinformaticsanalysis.github.io/single-cell/"
+          }
+        ]
+      },
+      {
+        "@type": "Dataset",
+        "name": "10x Genomics Chromium PBMC Single-Cell Transcriptome Marker Matrix",
+        "description": "Seurat v4 graph-based clustering marker genes, log2FC differentials, and cluster detection percentages across 9 clusters.",
+        "url": "https://suleimanbioinformaticsanalysis.github.io/single-cell/",
+        "creator": {
+          "@type": "ResearchOrganization",
+          "name": "SuleimanBioinformaticsAnalysis",
+          "url": "https://suleimanbioinformaticsanalysis.github.io/"
+        },
+        "keywords": ["Single-Cell", "Seurat", "UMAP", "PBMC", "Transcriptomics"]
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Ambient Atmospheric Glow -->
+  <div class="bg-atmosphere" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="../index.html" class="brand-link" aria-label="SuleimanBioinformaticsAnalysis Home">
+        <img src="../assets/logo-icon.svg" alt="SuleimanBioinformaticsAnalysis Logo" class="brand-logo-img" />
+        <span>Suleiman<span class="brand-title-accent">BioinformaticsAnalysis</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../bulk-rnaseq/index.html" class="nav-link">Bulk RNA-Seq</a></li>
+          <li><a href="index.html" class="nav-link active">Single-Cell</a></li>
+          <li><a href="../structural-biology/index.html" class="nav-link">Structural AI</a></li>
+          <li><a href="../clinical-genomics/index.html" class="nav-link">ClinVar</a></li>
+          <li><a href="../data-access/index.html" class="nav-link">Data Access</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="mailto:suleyman.hacizade1@gmail.com?subject=Single-Cell%20Data%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" class="btn-secondary" style="padding:0.5rem 0.95rem;font-size:0.85rem;">
+          <span>📧 Request Access</span>
+        </a>
+        <a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <span>🔒 Backend Vault</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Breadcrumbs Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item"><a href="../index.html#studio">Live Studio</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item active" aria-current="page">Single-Cell Seurat</li>
+      </ol>
+    </nav>
+
+    <!-- Pillar Hero Header -->
+    <section class="pillar-hero">
+      <div class="pillar-badge-group">
+        <span class="badge">🔬 Cellular Heterogeneity</span>
+        <span class="badge badge-purple">⚡ 10x Genomics Chromium</span>
+        <span class="badge badge-emerald">🧬 Seurat v4 Workflow</span>
+        <span class="badge">9 Distinct Clusters</span>
+      </div>
+
+      <h1 class="pillar-title">
+        Single-Cell RNA-Seq &amp; <span class="hero-title-gradient">Microenvironment Deconvolution</span>
+      </h1>
+      <p class="pillar-subtitle">
+        High-throughput single-cell profiling resolving peripheral immune cell subtypes and tumor microenvironment leukocytes using Seurat v4, PCA dimensional reduction, and unsupervised Louvain graph clustering.
+      </p>
+
+      <!-- Quick Navigation Sub-Bar -->
+      <nav class="pillar-nav-pills" aria-label="Pillar Sub-Navigation">
+        <a href="../index.html" class="nav-pill-link"><span>🏠</span> Main Hub</a>
+        <a href="../bulk-rnaseq/index.html" class="nav-pill-link"><span>🧬</span> Bulk RNA-Seq</a>
+        <a href="index.html" class="nav-pill-link active"><span>🔬</span> Single-Cell Seurat</a>
+        <a href="../wgcna-ml/index.html" class="nav-pill-link"><span>🤖</span> WGCNA &amp; ML</a>
+        <a href="../structural-biology/index.html" class="nav-pill-link"><span>⚡</span> AlphaFold &amp; Docking</a>
+        <a href="../clinical-genomics/index.html" class="nav-pill-link"><span>🏥</span> ClinVar 609K</a>
+        <a href="../manuscript/index.html" class="nav-pill-link"><span>📄</span> Manuscript</a>
+        <a href="../data-access/index.html" class="nav-pill-link"><span>🔒</span> Data Access</a>
+      </nav>
+    </section>
+
+    <!-- Deep Scientific Content & Methodology -->
+    <section class="section" style="padding-top:0;">
+      <div class="cards-2col" style="margin-bottom:2rem;">
+        <div class="info-card">
+          <div class="info-card-header">
+            <span style="font-size:1.5rem;">🧪</span>
+            <h2 class="info-card-title">Quality Control &amp; Preprocessing Protocol</h2>
+          </div>
+          <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.65;">
+            Low-quality droplets, empty barcodes, and apoptotic cells are removed using three stringent bivariate statistical thresholds:
+          </p>
+          <ul class="arch-list" style="margin-top:0.75rem;">
+            <li><strong>Gene Detectability:</strong> <code>200 &lt; nFeature_RNA &lt; 2,500</code> (filters cellular debris and multiplet doublets).</li>
+            <li><strong>Sequencing Depth:</strong> <code>nCount_RNA</code> monitored for uniform library saturation.</li>
+            <li><strong>Mitochondrial Fraction:</strong> <code>percent.mt &lt; 5%</code> (eliminates lysed cells leaking cytoplasmic mRNA).</li>
+            <li><strong>Feature Selection:</strong> Identification of the top 2,000 highly variable features (HVGs) using the <code>vst</code> selection method.</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header">
+            <span style="font-size:1.5rem;">🗺️</span>
+            <h2 class="info-card-title">Dimensional Reduction &amp; Cell Annotation</h2>
+          </div>
+          <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.65;">
+            Top 10 principal components selected via Elbow Plot analysis serve as coordinates for shared nearest neighbor (SNN) graph construction and UMAP projection:
+          </p>
+          <ul class="arch-list" style="margin-top:0.75rem;">
+            <li><strong>CD4+ T Cells (IL7R, CCR7):</strong> Central memory and naive CD4+ populations.</li>
+            <li><strong>CD8+ T Cells (CD8A, GZMK):</strong> Cytotoxic effector lymphocytes.</li>
+            <li><strong>B Cells (MS4A1, CD79A):</strong> Mature humoral antibody-producing lineages.</li>
+            <li><strong>NK Cells (GNLY, NKG7):</strong> Innate anti-tumor perforin/granzyme effectors.</li>
+            <li><strong>Monocytes (CD14, FCGR3A):</strong> Classical and non-classical antigen-presenting phagocytes.</li>
+            <li><strong>Dendritic Cells (FCER1A, CST3):</strong> Professional antigen cross-presenters.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Single-Cell Marker Dynamic Table -->
+      <div class="filter-bar">
+        <select id="sc-cluster-select" class="filter-select" aria-label="Filter by cluster">
+          <option value="all">All Clusters (0-8)</option>
+        </select>
+        <span class="filter-count">Single-Cell 10x Genomics PBMC Transcriptome</span>
+      </div>
+
+      <div tabindex="0" role="region" aria-labelledby="sc-table-caption" class="table-wrapper">
+        <table>
+          <caption id="sc-table-caption">Seurat scRNA-Seq Top Cluster Marker Genes &amp; Differential Log-Fold Changes</caption>
+          <thead>
+            <tr>
+              <th scope="col">Marker Gene</th>
+              <th scope="col">Cluster ID</th>
+              <th scope="col">Avg log&sub2;FC</th>
+              <th scope="col">Detection in Cluster (Pct.1)</th>
+              <th scope="col">Background Detection (Pct.2)</th>
+              <th scope="col">Adjusted P-val</th>
+            </tr>
+          </thead>
+          <tbody id="sc-tbody">
+            <tr><td colspan="6" style="text-align:center;padding:2rem;">Loading single-cell markers...</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Single-Cell Figures Grid -->
+      <div class="figures-grid" style="margin-top:2.5rem;">
+        <div class="figure-card">
+          <div class="figure-img-wrap">
+            <img src="../assets/pbmc_final_annotation.png" alt="PBMC Final Cell Type Annotation UMAP" loading="lazy" />
+          </div>
+          <div class="figure-meta">
+            <h3 class="figure-title">PBMC Cell-Type UMAP Annotation</h3>
+            <p class="figure-desc">Resolved CD4+ T Cells, CD8+ T Cells, B Cells, NK Cells, CD14+ Monocytes, and Dendritic Cells.</p>
+          </div>
+        </div>
+
+        <div class="figure-card">
+          <div class="figure-img-wrap">
+            <img src="../assets/pbmc_umap_islands.png" alt="Seurat PBMC Unsupervised Clusters" loading="lazy" />
+          </div>
+          <div class="figure-meta">
+            <h3 class="figure-title">Unsupervised Graph-Based Clusters</h3>
+            <p class="figure-desc">9 transcriptionally distinct cell clusters mapped in two-dimensional UMAP embedding.</p>
+          </div>
+        </div>
+
+        <div class="figure-card">
+          <div class="figure-img-wrap">
+            <img src="../assets/pbmc_qc_violin.png" alt="Single-cell QC violin plots" loading="lazy" />
+          </div>
+          <div class="figure-meta">
+            <h3 class="figure-title">Quality Control Violin Plots</h3>
+            <p class="figure-desc">nFeature_RNA, nCount_RNA, and percent.mito thresholds filtering low-quality barcodes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand-link">
+            <img src="../assets/logo-icon.svg" alt="SuleimanBioinformaticsAnalysis Logo" class="brand-logo-img" />
+            <span>Suleiman<span class="brand-title-accent">BioinformaticsAnalysis</span></span>
+          </a>
+          <p>
+            High-performance computational biology ecosystem for oncology transcriptomics, single-cell clustering, AlphaFold2 modeling, and precision clinical genomics.
+          </p>
+          <p style="margin-top:0.75rem;font-size:0.85rem;color:var(--accent-emerald);">
+            🔒 <strong>Private Data &amp; Access Requests:</strong><br />
+            <a href="mailto:suleyman.hacizade1@gmail.com?subject=Single-Cell%20Data%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" style="color:var(--accent-emerald);text-decoration:underline;font-family:var(--font-mono);">suleyman.hacizade1@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Repositories &amp; Access</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Central Web Portal ↗</a></li>
+            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">🔒 Secure Backend Vault (Private) ↗</a></li>
+            <li><a href="../data-access/index.html">Data Access Policy</a></li>
+            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">Organization Profile ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Deep Pillar Pages</h4>
+          <ul class="footer-links">
+            <li><a href="../bulk-rnaseq/index.html">Bulk RNA-Seq &amp; DEGs</a></li>
+            <li><a href="index.html">Single-Cell Seurat</a></li>
+            <li><a href="../wgcna-ml/index.html">WGCNA &amp; Machine Learning</a></li>
+            <li><a href="../structural-biology/index.html">AlphaFold2 AKT1 &amp; Docking</a></li>
+            <li><a href="../clinical-genomics/index.html">ClinVar 609K SNPs</a></li>
+            <li><a href="../manuscript/index.html">PLOS ONE Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SuleimanBioinformaticsAnalysis. Maintained by Suleiman Hajizadeh. Distributed under the MIT License.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/app.js"></script>
+</body>
+</html>

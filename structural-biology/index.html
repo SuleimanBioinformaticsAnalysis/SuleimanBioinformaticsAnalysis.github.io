@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>AlphaFold2 AKT1 &amp; AutoDock Vina Molecular Docking | SuleimanBioinformaticsAnalysis</title>
+  <meta name="title" content="AlphaFold2 AKT1 &amp; AutoDock Vina Molecular Docking | SuleimanBioinformaticsAnalysis" />
+  <meta name="description" content="AlphaFold2 3D modeling of human AKT1 kinase (UniProt P31749, pLDDT 96.1), PDB 3O96 crystal structure, and AutoDock Vina allosteric MK-2206 docking (-9.4 kcal/mol)." />
+  <meta name="keywords" content="AlphaFold2, AutoDock Vina, AKT1 Kinase, P31749, PDB 3O96, MK-2206, Allosteric Inhibition, Molecular Docking, Structural Biology, Trp80, Asp292, Ipatasertib, Capivasertib, SuleimanBioinformaticsAnalysis" />
+  <meta name="author" content="Suleiman Hajizadeh" />
+  <meta name="publisher" content="SuleimanBioinformaticsAnalysis" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- Canonical & Alternates -->
+  <link rel="canonical" href="https://suleimanbioinformaticsanalysis.github.io/structural-biology/" />
+  <link rel="alternate" hreflang="en" href="https://suleimanbioinformaticsanalysis.github.io/structural-biology/" />
+  <link rel="alternate" hreflang="x-default" href="https://suleimanbioinformaticsanalysis.github.io/structural-biology/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="SuleimanBioinformaticsAnalysis" />
+  <meta property="og:title" content="AlphaFold2 AKT1 &amp; AutoDock Vina Molecular Docking | SuleimanBioinformaticsAnalysis" />
+  <meta property="og:description" content="Biophysical characterization of allosteric MK-2206 (-9.4 kcal/mol) vs. ATP-competitive kinase inhibitors." />
+  <meta property="og:url" content="https://suleimanbioinformaticsanalysis.github.io/structural-biology/" />
+  <meta property="og:image" content="https://suleimanbioinformaticsanalysis.github.io/assets/Netice.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AlphaFold2 AKT1 &amp; AutoDock Vina Molecular Docking" />
+  <meta name="twitter:description" content="High-precision protein folding and allosteric kinase virtual screening." />
+  <meta name="twitter:image" content="https://suleimanbioinformaticsanalysis.github.io/assets/Netice.png" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="../favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../manifest.json" />
+  <meta name="theme-color" content="#f97316" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://suleimanbioinformaticsanalysis.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "AlphaFold & Molecular Docking",
+            "item": "https://suleimanbioinformaticsanalysis.github.io/structural-biology/"
+          }
+        ]
+      },
+      {
+        "@type": "BioChemEntity",
+        "name": "AKT1 Kinase",
+        "identifier": "UniProt:P31749",
+        "description": "RAC-alpha serine/threonine-protein kinase master oncogenic hub in Triple-Negative Breast Cancer.",
+        "url": "https://suleimanbioinformaticsanalysis.github.io/structural-biology/"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Ambient Atmospheric Glow -->
+  <div class="bg-atmosphere" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="../index.html" class="brand-link" aria-label="SuleimanBioinformaticsAnalysis Home">
+        <img src="../assets/logo-icon.svg" alt="SuleimanBioinformaticsAnalysis Logo" class="brand-logo-img" />
+        <span>Suleiman<span class="brand-title-accent">BioinformaticsAnalysis</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../bulk-rnaseq/index.html" class="nav-link">Bulk RNA-Seq</a></li>
+          <li><a href="../single-cell/index.html" class="nav-link">Single-Cell</a></li>
+          <li><a href="../wgcna-ml/index.html" class="nav-link">WGCNA &amp; ML</a></li>
+          <li><a href="index.html" class="nav-link active">Structural AI</a></li>
+          <li><a href="../clinical-genomics/index.html" class="nav-link">ClinVar</a></li>
+          <li><a href="../data-access/index.html" class="nav-link">Data Access</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="mailto:suleyman.hacizade1@gmail.com?subject=Structural%20Biology%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" class="btn-secondary" style="padding:0.5rem 0.95rem;font-size:0.85rem;">
+          <span>📧 Request Access</span>
+        </a>
+        <a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <span>🔒 Backend Vault</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Breadcrumbs Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item"><a href="../index.html#studio">Live Studio</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item active" aria-current="page">AlphaFold &amp; Docking</li>
+      </ol>
+    </nav>
+
+    <!-- Pillar Hero Header -->
+    <section class="pillar-hero">
+      <div class="pillar-badge-group">
+        <span class="badge">⚡ AlphaFold2 Structural AI</span>
+        <span class="badge badge-purple">💊 AutoDock Vina 1.2.5 Virtual Screening</span>
+        <span class="badge badge-emerald">🔬 PDB 3O96 Crystal Complex (2.70 Å)</span>
+        <span class="badge">Allosteric MK-2206 (-9.4 kcal/mol)</span>
+      </div>
+
+      <h1 class="pillar-title">
+        AlphaFold2 3D Modeling &amp; <span class="hero-title-gradient">Allosteric Kinase Docking</span>
+      </h1>
+      <p class="pillar-subtitle">
+        Bridging transcriptome-level hub discovery to atomic-resolution biophysics: AlphaFold2 modeling of human AKT1 kinase (UniProt P31749) and virtual screening of allosteric versus orthosteric kinase inhibitors.
+      </p>
+
+      <!-- Quick Navigation Sub-Bar -->
+      <nav class="pillar-nav-pills" aria-label="Pillar Sub-Navigation">
+        <a href="../index.html" class="nav-pill-link"><span>🏠</span> Main Hub</a>
+        <a href="../bulk-rnaseq/index.html" class="nav-pill-link"><span>🧬</span> Bulk RNA-Seq</a>
+        <a href="../single-cell/index.html" class="nav-pill-link"><span>🔬</span> Single-Cell Seurat</a>
+        <a href="../wgcna-ml/index.html" class="nav-pill-link"><span>🤖</span> WGCNA &amp; ML</a>
+        <a href="index.html" class="nav-pill-link active"><span>⚡</span> AlphaFold &amp; Docking</a>
+        <a href="../clinical-genomics/index.html" class="nav-pill-link"><span>🏥</span> ClinVar 609K</a>
+        <a href="../manuscript/index.html" class="nav-pill-link"><span>📄</span> Manuscript</a>
+        <a href="../data-access/index.html" class="nav-pill-link"><span>🔒</span> Data Access</a>
+      </nav>
+    </section>
+
+    <!-- Deep Scientific Content & Methodology -->
+    <section class="section" style="padding-top:0;">
+      <div class="cards-2col" style="margin-bottom:2rem;">
+        <div class="info-card">
+          <div class="info-card-header">
+            <span style="font-size:1.5rem;">🧬</span>
+            <h2 class="info-card-title">AlphaFold2 3D Model: Human AKT1 (UniProt P31749)</h2>
+          </div>
+          <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.65;margin-bottom:1rem;">
+            Full-length 480-residue human AKT1 kinase was modeled utilizing AlphaFold2 neural network ensembles, exhibiting atomic-grade structural confidence across both the PH domain and the catalytic kinase domain:
+          </p>
+          <div class="stats-grid" style="margin-top:1rem;">
+            <div class="stat-card">
+              <div class="stat-value">92.4</div>
+              <div class="stat-label">Global Mean pLDDT</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">96.1</div>
+              <div class="stat-label">Catalytic Core pLDDT</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-value">94.2%</div>
+              <div class="stat-label">Ramachandran Favored</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header">
+            <span style="font-size:1.5rem;">💊</span>
+            <h2 class="info-card-title">AutoDock Vina 1.2.5 Comparative Virtual Screening</h2>
+          </div>
+          <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.65;margin-bottom:1rem;">
+            Biophysical docking evaluated conformational binding energies of targeted allosteric versus ATP-competitive small-molecule inhibitors in the simulated AKT1 binding cavity:
+          </p>
+          <ul class="arch-list">
+            <li><strong>MK-2206 (Allosteric):</strong> Binding affinity <strong>-9.4 kcal/mol</strong>. Stabilizes closed PH-in inactive kinase conformation via &pi;-stacking with Trp80 and hydrogen bonding with Asp292.</li>
+            <li><strong>Ipatasertib (ATP-competitive):</strong> Binding affinity <strong>-8.2 kcal/mol</strong>. Interacts with catalytic Lys179 and Glu234 in the ATP cleft.</li>
+            <li><strong>Capivasertib (AZD5363):</strong> Binding affinity <strong>-8.0 kcal/mol</strong>. Engages the Ala230 hinge region and Phe438.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Docking Summary Table -->
+      <div tabindex="0" role="region" aria-labelledby="docking-table-caption" class="table-wrapper">
+        <table>
+          <caption id="docking-table-caption">AutoDock Vina In Silico Binding Affinities and Molecular Interaction Profiles for Human AKT1 Kinase</caption>
+          <thead>
+            <tr>
+              <th scope="col">Inhibitor Candidate</th>
+              <th scope="col">Mechanism of Action</th>
+              <th scope="col">Binding Energy (&Delta;G)</th>
+              <th scope="col">Target Pocket</th>
+              <th scope="col">Key Interacting Residues</th>
+              <th scope="col">Clinical Development Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">MK-2206</th>
+              <td data-label="Mechanism">Allosteric Kinase Inhibitor</td>
+              <td data-label="Binding Energy" style="font-family:var(--font-mono);font-weight:700;color:var(--accent-emerald);">-9.4 kcal/mol</td>
+              <td data-label="Target Pocket">PH-Kinase interdomain allosteric cavity</td>
+              <td data-label="Key Residues">Trp80 (&pi;-&pi;), Asp292 (H-bond), Glu198</td>
+              <td data-label="Status">Phase II Clinical Trials</td>
+            </tr>
+            <tr>
+              <th scope="row">Ipatasertib</th>
+              <td data-label="Mechanism">ATP-Competitive Inhibitor</td>
+              <td data-label="Binding Energy" style="font-family:var(--font-mono);font-weight:700;color:var(--accent-cyan);">-8.2 kcal/mol</td>
+              <td data-label="Target Pocket">Catalytic ATP-binding cleft</td>
+              <td data-label="Key Residues">Lys179 (H-bond), Glu234, Met227</td>
+              <td data-label="Status">Phase III TNBC Combination Trial</td>
+            </tr>
+            <tr>
+              <th scope="row">Capivasertib</th>
+              <td data-label="Mechanism">Pan-AKT ATP-Competitive</td>
+              <td data-label="Binding Energy" style="font-family:var(--font-mono);font-weight:700;color:var(--accent-cyan);">-8.0 kcal/mol</td>
+              <td data-label="Target Pocket">Catalytic ATP hinge region</td>
+              <td data-label="Key Residues">Ala230 (Backbone H-bond), Phe438</td>
+              <td data-label="Status">FDA Approved (HR+ Breast Cancer)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- 3D Biomolecular Structure Exploration Card -->
+      <div class="structure-viewer-box" style="margin-top:2.5rem;">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:1.5rem;margin-bottom:1.25rem;">
+          <div>
+            <span class="badge badge-purple" style="margin-bottom:0.5rem;">Mol* 3D Biomolecular Engine</span>
+            <h3 style="font-size:1.3rem;font-weight:800;color:var(--text-primary);">
+              Interactive 3D Molecular Architecture: AKT1 Kinase &amp; MK-2206 Pocket
+            </h3>
+            <p style="font-size:0.92rem;color:var(--text-secondary);max-width:700px;margin-top:0.35rem;">
+              Explore atomic coordinates from both DeepMind AlphaFold2 neural network predictions and experimental X-ray diffraction (PDB 3O96, 2.70 &Aring; resolution).
+            </p>
+          </div>
+          <div style="display:flex;flex-wrap:wrap;gap:0.75rem;align-items:center;">
+            <a href="../assets/structures/AF-P31749-F1-model_v6.cif" download class="btn-sm btn-secondary">
+              📥 Download AF2 Model (.cif)
+            </a>
+            <a href="../assets/structures/3O96.cif" download class="btn-sm btn-secondary">
+              📥 Download PDB 3O96 (.cif)
+            </a>
+            <a href="sidecar://science/biomolecular_structure_viewer/ui.html" class="sidecar-badge-link" title="Open Biomolecular Structure Viewer Sidecar">
+              <span>🔬</span> Open 3D Viewer Sidecar
+            </a>
+          </div>
+        </div>
+
+        <h4 style="font-size:1rem;font-weight:700;margin-top:1.5rem;color:var(--text-primary);">
+          Critical Biophysical Residue Annotations
+        </h4>
+        <div class="residues-grid">
+          <div class="residue-card">
+            <span class="residue-tag tag-trp80">Trp80 (PH Domain)</span>
+            <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:0.25rem;">
+              Forms a critical &pi;-&pi; aromatic stacking clamp with the naphthyridinone core of MK-2206. Holds the PH domain locked against the catalytic cleft.
+            </p>
+            <div style="font-size:0.8rem;color:var(--accent-orange);font-weight:600;margin-top:auto;">Allosteric Contact Anchor</div>
+          </div>
+
+          <div class="residue-card">
+            <span class="residue-tag tag-lys179">Lys179 (Catalytic Core)</span>
+            <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:0.25rem;">
+              Essential catalytic lysine that coordinates &alpha;- and &beta;-phosphates of ATP. Targeted by ATP-competitive inhibitors like Ipatasertib.
+            </p>
+            <div style="font-size:0.8rem;color:var(--accent-cyan);font-weight:600;margin-top:auto;">Orthosteric ATP Coordinator</div>
+          </div>
+
+          <div class="residue-card">
+            <span class="residue-tag tag-asp292">Asp292 (DFG Motif)</span>
+            <p style="font-size:0.85rem;color:var(--text-secondary);margin-top:0.25rem;">
+              Conserved catalytic aspartate forming direct hydrogen bonds with MK-2206. Coordinates Mg&sup2;&plus; in active kinase states.
+            </p>
+            <div style="font-size:0.8rem;color:var(--accent-purple);font-weight:600;margin-top:auto;">Active Site Coordinator</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand-link">
+            <img src="../assets/logo-icon.svg" alt="SuleimanBioinformaticsAnalysis Logo" class="brand-logo-img" />
+            <span>Suleiman<span class="brand-title-accent">BioinformaticsAnalysis</span></span>
+          </a>
+          <p>
+            High-performance computational biology ecosystem for oncology transcriptomics, single-cell clustering, AlphaFold2 modeling, and precision clinical genomics.
+          </p>
+          <p style="margin-top:0.75rem;font-size:0.85rem;color:var(--accent-emerald);">
+            🔒 <strong>Private Data &amp; Access Requests:</strong><br />
+            <a href="mailto:suleyman.hacizade1@gmail.com?subject=Structural%20Biology%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" style="color:var(--accent-emerald);text-decoration:underline;font-family:var(--font-mono);">suleyman.hacizade1@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Repositories &amp; Access</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Central Web Portal ↗</a></li>
+            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">🔒 Secure Backend Vault (Private) ↗</a></li>
+            <li><a href="../data-access/index.html">Data Access Policy</a></li>
+            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">Organization Profile ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Deep Pillar Pages</h4>
+          <ul class="footer-links">
+            <li><a href="../bulk-rnaseq/index.html">Bulk RNA-Seq &amp; DEGs</a></li>
+            <li><a href="../single-cell/index.html">Single-Cell Seurat</a></li>
+            <li><a href="../wgcna-ml/index.html">WGCNA &amp; Machine Learning</a></li>
+            <li><a href="index.html">AlphaFold2 AKT1 &amp; Docking</a></li>
+            <li><a href="../clinical-genomics/index.html">ClinVar 609K SNPs</a></li>
+            <li><a href="../manuscript/index.html">PLOS ONE Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SuleimanBioinformaticsAnalysis. Maintained by Suleiman Hajizadeh. Distributed under the MIT License.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/app.js"></script>
+</body>
+</html>

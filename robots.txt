@@ -1,0 +1,45 @@
+# ==============================================================================
+# Robots.txt for SuleimanBioinformaticsAnalysis
+# Production Multi-Omics Pipelines & Oncology Intelligence Hub
+# URL: https://suleimanbioinformaticsanalysis.github.io/
+# ==============================================================================
+
+User-agent: *
+Allow: /
+Allow: /css/
+Allow: /js/
+Allow: /assets/
+Allow: /data/
+Allow: /bulk-rnaseq/
+Allow: /single-cell/
+Allow: /wgcna-ml/
+Allow: /structural-biology/
+Allow: /clinical-genomics/
+Allow: /manuscript/
+Allow: /data-access/
+
+# Specific major search engine crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /assets/
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# Host & Sitemap Declaration
+Host: https://suleimanbioinformaticsanalysis.github.io
+Sitemap: https://suleimanbioinformaticsanalysis.github.io/sitemap.xml

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Primary Meta Tags -->
+  <title>NIH ClinVar 609K Pharmacogenomics &amp; Clinical Curation | SuleimanBioinformaticsAnalysis</title>
+  <meta name="title" content="NIH ClinVar 609K Pharmacogenomics &amp; Clinical Curation | SuleimanBioinformaticsAnalysis" />
+  <meta name="description" content="Cross-referencing 609,387 personal microarray SNPs with NIH ClinVar: CPIC pharmacogenomics (CYP2C9, NAT2, CYP1A2, COMT) and clinical risk curation." />
+  <meta name="keywords" content="ClinVar, Pharmacogenomics, SNPs, Microarray, CYP2C9, NAT2, CYP1A2, COMT, Val158Met, Personal Genomics, Variant Interpretation, CPIC Guidelines, SuleimanBioinformaticsAnalysis" />
+  <meta name="author" content="Suleiman Hajizadeh" />
+  <meta name="publisher" content="SuleimanBioinformaticsAnalysis" />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+
+  <!-- Canonical & Alternates -->
+  <link rel="canonical" href="https://suleimanbioinformaticsanalysis.github.io/clinical-genomics/" />
+  <link rel="alternate" hreflang="en" href="https://suleimanbioinformaticsanalysis.github.io/clinical-genomics/" />
+  <link rel="alternate" hreflang="x-default" href="https://suleimanbioinformaticsanalysis.github.io/clinical-genomics/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="SuleimanBioinformaticsAnalysis" />
+  <meta property="og:title" content="NIH ClinVar 609K Pharmacogenomics &amp; Clinical Variant Curation" />
+  <meta property="og:description" content="Automated pipeline mapping 609,387 microarray SNPs against NIH ClinVar for drug metabolism alleles and disease risk." />
+  <meta property="og:url" content="https://suleimanbioinformaticsanalysis.github.io/clinical-genomics/" />
+  <meta property="og:image" content="https://suleimanbioinformaticsanalysis.github.io/assets/logo-emblem.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NIH ClinVar 609K Pharmacogenomics &amp; Clinical Variant Curation" />
+  <meta name="twitter:description" content="Personal clinical genomics and automated NIH ClinVar variant annotation pipeline." />
+  <meta name="twitter:image" content="https://suleimanbioinformaticsanalysis.github.io/assets/logo-emblem.png" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+  <link rel="icon" type="image/png" sizes="64x64" href="../favicon.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../apple-touch-icon.png" />
+  <link rel="manifest" href="../manifest.json" />
+  <meta name="theme-color" content="#f97316" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://suleimanbioinformaticsanalysis.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "ClinVar 609K SNPs",
+            "item": "https://suleimanbioinformaticsanalysis.github.io/clinical-genomics/"
+          }
+        ]
+      },
+      {
+        "@type": "Dataset",
+        "name": "NIH ClinVar Annotated Microarray SNP Dataset (609,387 variants)",
+        "description": "Cross-referenced personal genomics dataset categorizing drug metabolism alleles (CYP2C9, NAT2, CYP1A2, COMT) and clinical significance tiers.",
+        "url": "https://suleimanbioinformaticsanalysis.github.io/clinical-genomics/",
+        "creator": {
+          "@type": "ResearchOrganization",
+          "name": "SuleimanBioinformaticsAnalysis"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <!-- Ambient Atmospheric Glow -->
+  <div class="bg-atmosphere" aria-hidden="true">
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-orb orb-3"></div>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <a href="../index.html" class="brand-link" aria-label="SuleimanBioinformaticsAnalysis Home">
+        <img src="../assets/logo-icon.svg" alt="SuleimanBioinformaticsAnalysis Logo" class="brand-logo-img" />
+        <span>Suleiman<span class="brand-title-accent">BioinformaticsAnalysis</span></span>
+      </a>
+
+      <nav aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="../index.html" class="nav-link">Home</a></li>
+          <li><a href="../bulk-rnaseq/index.html" class="nav-link">Bulk RNA-Seq</a></li>
+          <li><a href="../single-cell/index.html" class="nav-link">Single-Cell</a></li>
+          <li><a href="../wgcna-ml/index.html" class="nav-link">WGCNA &amp; ML</a></li>
+          <li><a href="../structural-biology/index.html" class="nav-link">Structural AI</a></li>
+          <li><a href="index.html" class="nav-link active">ClinVar</a></li>
+          <li><a href="../data-access/index.html" class="nav-link">Data Access</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Toggle Dark/Light Mode" title="Toggle Theme">
+          <span id="theme-icon">☀️</span>
+        </button>
+        <a href="mailto:suleyman.hacizade1@gmail.com?subject=ClinVar%20SNP%20Pipeline%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" class="btn-secondary" style="padding:0.5rem 0.95rem;font-size:0.85rem;">
+          <span>📧 Request Access</span>
+        </a>
+        <a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          <span>🔒 Backend Vault</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Breadcrumbs Navigation -->
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item"><a href="../index.html#studio">Live Studio</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item active" aria-current="page">ClinVar 609K SNPs</li>
+      </ol>
+    </nav>
+
+    <!-- Pillar Hero Header -->
+    <section class="pillar-hero">
+      <div class="pillar-badge-group">
+        <span class="badge">🏥 Clinical Genomics</span>
+        <span class="badge badge-purple">⚡ 609,387 Screened Microarray SNPs</span>
+        <span class="badge badge-emerald">💊 NIH ClinVar Database</span>
+        <span class="badge">CPIC Pharmacogenomics</span>
+      </div>
+
+      <h1 class="pillar-title">
+        NIH ClinVar Annotation &amp; <span class="hero-title-gradient">Personal Pharmacogenomics</span>
+      </h1>
+      <p class="pillar-subtitle">
+        Automated bioinformatics pipeline cross-referencing dense 609K single-nucleotide polymorphism (SNP) microarray callsets against the NCBI ClinVar archive to characterize drug metabolism alleles, protective polymorphisms, and disease risk factors.
+      </p>
+
+      <!-- Quick Navigation Sub-Bar -->
+      <nav class="pillar-nav-pills" aria-label="Pillar Sub-Navigation">
+        <a href="../index.html" class="nav-pill-link"><span>🏠</span> Main Hub</a>
+        <a href="../bulk-rnaseq/index.html" class="nav-pill-link"><span>🧬</span> Bulk RNA-Seq</a>
+        <a href="../single-cell/index.html" class="nav-pill-link"><span>🔬</span> Single-Cell Seurat</a>
+        <a href="../wgcna-ml/index.html" class="nav-pill-link"><span>🤖</span> WGCNA &amp; ML</a>
+        <a href="../structural-biology/index.html" class="nav-pill-link"><span>⚡</span> AlphaFold &amp; Docking</a>
+        <a href="index.html" class="nav-pill-link active"><span>🏥</span> ClinVar 609K</a>
+        <a href="../manuscript/index.html" class="nav-pill-link"><span>📄</span> Manuscript</a>
+        <a href="../data-access/index.html" class="nav-pill-link"><span>🔒</span> Data Access</a>
+      </nav>
+    </section>
+
+    <!-- Deep Scientific Content & Methodology -->
+    <section class="section" style="padding-top:0;">
+      <div class="disclaimer-banner" role="alert">
+        <span style="font-size:1.3rem;">⚠️</span>
+        <div>
+          <strong>Automated Bioinformatics Annotation Notice:</strong>
+          This dashboard displays automated pipeline cross-references between 609,387 SNP microarray variants and the NIH ClinVar database. These variant classifications (Pharmacogenomics, Protective, Risk Factor) illustrate computational pipeline methodologies and do NOT constitute clinical medical diagnoses.
+        </div>
+      </div>
+
+      <div class="cards-2col" style="margin-bottom:2rem;">
+        <div class="info-card">
+          <div class="info-card-header">
+            <span style="font-size:1.5rem;">💊</span>
+            <h2 class="info-card-title">Pharmacogenomics &amp; CPIC Drug Metabolism</h2>
+          </div>
+          <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.65;">
+            Genetic polymorphisms in drug-metabolizing enzymes and transporters (DMET) dictate individual therapeutic efficacy and adverse event susceptibility:
+          </p>
+          <ul class="arch-list" style="margin-top:0.75rem;">
+            <li><strong>CYP1A2 (rs762551):</strong> Regulatory variant modulating hepatic cytochrome P450 1A2 expression; stratifies rapid vs. slow caffeine and theophylline clearance.</li>
+            <li><strong>CYP2C9 (rs7900194, rs28371685):</strong> Modulates metabolism of narrow therapeutic index oral anticoagulants (Warfarin) and NSAIDs.</li>
+            <li><strong>NAT2 (rs1801280):</strong> N-acetyltransferase 2 polymorphism associated with slow acetylation phenotype and elevated drug toxicity risks during isoniazid therapy.</li>
+            <li><strong>COMT (rs4680, Val158Met):</strong> Catechol-O-methyltransferase variant regulating prefrontal dopamine enzymatic clearance ("Worrier vs. Warrior" cognitive traits).</li>
+          </ul>
+        </div>
+
+        <div class="info-card">
+          <div class="info-card-header">
+            <span style="font-size:1.5rem;">🔍</span>
+            <h2 class="info-card-title">ClinVar Curation &amp; Quality Architecture</h2>
+          </div>
+          <p style="color:var(--text-secondary);font-size:0.92rem;line-height:1.65;">
+            Our python pipeline (`clinvar_annotator.py`) parses GRCh37/GRCh38 VCF coordinate conversions, resolves rsIDs, and classifies assertions into standardized ACMG tiers:
+          </p>
+          <ul class="arch-list" style="margin-top:0.75rem;">
+            <li><strong>Coverage:</strong> 609,387 raw Illumina OmniArray SNPs processed with zero missing barcode dropouts.</li>
+            <li><strong>Filtering Logic:</strong> Restricts reportable subsets to variants with review status &ge; 1 star (criteria provided).</li>
+            <li><strong>Personal Genomic Privacy:</strong> Raw individual microarray callsets remain protected in the Private Core Vault; summary stats are rendered securely on client.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Interactive Filter & Table -->
+      <div class="filter-bar">
+        <input type="search" id="clinvar-search" class="search-input" placeholder="Search by gene or RSID (e.g., CYP2C9, NAT2, RET, rs7900194)..." aria-label="Search ClinVar variants" />
+        <select id="clinvar-filter" class="filter-select" aria-label="Filter variant classification">
+          <option value="all">All Classifications</option>
+          <option value="Pharmacogenomics">Pharmacogenomics (Drug Metabolism)</option>
+          <option value="Protective">Protective Polymorphisms</option>
+          <option value="Risk Factor">Risk Factors</option>
+          <option value="Clinical Variant">Clinical / Conflicting Pathogenicity</option>
+        </select>
+        <span class="filter-count">609,387 Screened Microarray SNPs</span>
+      </div>
+
+      <div tabindex="0" role="region" aria-labelledby="clinvar-table-caption" class="table-wrapper">
+        <table>
+          <caption id="clinvar-table-caption">High-Confidence NIH ClinVar Cross-Referenced Genetic Variants (MyHeritage Cohort Pipeline)</caption>
+          <thead>
+            <tr>
+              <th scope="col">Gene Symbol</th>
+              <th scope="col">RSID</th>
+              <th scope="col">Genotype</th>
+              <th scope="col">Category</th>
+              <th scope="col">Clinical Significance</th>
+              <th scope="col">Phenotype / Clinical Actionability</th>
+            </tr>
+          </thead>
+          <tbody id="clinvar-tbody">
+            <tr><td colspan="6" style="text-align:center;padding:2rem;">Loading ClinVar variant data...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="brand-link">
+            <img src="../assets/logo-icon.svg" alt="SuleimanBioinformaticsAnalysis Logo" class="brand-logo-img" />
+            <span>Suleiman<span class="brand-title-accent">BioinformaticsAnalysis</span></span>
+          </a>
+          <p>
+            High-performance computational biology ecosystem for oncology transcriptomics, single-cell clustering, AlphaFold2 modeling, and precision clinical genomics.
+          </p>
+          <p style="margin-top:0.75rem;font-size:0.85rem;color:var(--accent-emerald);">
+            🔒 <strong>Private Data &amp; Access Requests:</strong><br />
+            <a href="mailto:suleyman.hacizade1@gmail.com?subject=ClinVar%20SNP%20Pipeline%20Access%20Request%20-%20SuleimanBioinformaticsAnalysis" style="color:var(--accent-emerald);text-decoration:underline;font-family:var(--font-mono);">suleyman.hacizade1@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Repositories &amp; Access</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Central Web Portal ↗</a></li>
+            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">🔒 Secure Backend Vault (Private) ↗</a></li>
+            <li><a href="../data-access/index.html">Data Access Policy</a></li>
+            <li><a href="https://github.com/SuleimanBioinformaticsAnalysis" target="_blank" rel="noopener noreferrer">Organization Profile ↗</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Deep Pillar Pages</h4>
+          <ul class="footer-links">
+            <li><a href="../bulk-rnaseq/index.html">Bulk RNA-Seq &amp; DEGs</a></li>
+            <li><a href="../single-cell/index.html">Single-Cell Seurat</a></li>
+            <li><a href="../wgcna-ml/index.html">WGCNA &amp; Machine Learning</a></li>
+            <li><a href="../structural-biology/index.html">AlphaFold2 AKT1 &amp; Docking</a></li>
+            <li><a href="index.html">ClinVar 609K SNPs</a></li>
+            <li><a href="../manuscript/index.html">PLOS ONE Manuscript</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 SuleimanBioinformaticsAnalysis. Maintained by Suleiman Hajizadeh. Distributed under the MIT License.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <!-- 1. Central Multi-Omics & Oncology Hub -->
+  <url>
+    <loc>https://suleimanbioinformaticsanalysis.github.io/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/logo.svg</image:loc>
+      <image:title>SuleimanBioinformaticsAnalysis Official Logo</image:title>
+      <image:caption>Multi-Omics Pipelines &amp; Oncology Intelligence Official Brand Emblem</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/logo-emblem.png</image:loc>
+      <image:title>SuleimanBioinformaticsAnalysis Network Emblem</image:title>
+      <image:caption>Octagon WGCNA co-expression network with central AKT1 hub node</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/ML_ROC_Curve_NestedCV.png</image:loc>
+      <image:title>Nested Cross-Validation ROC Curve AUC 0.91</image:title>
+      <image:caption>Random Forest TNBC oncology classifier performance across 5-fold outer splits</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/Reactome_Pathway_Dotplot.png</image:loc>
+      <image:title>Reactome Pathway Enrichment Dotplot</image:title>
+      <image:caption>Over-represented oncogenic pathways in WGCNA turquoise co-expression module</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/pbmc_final_annotation.png</image:loc>
+      <image:title>PBMC Single-Cell Cell Type UMAP Annotation</image:title>
+      <image:caption>Resolved CD4+ T Cells, CD8+ T Cells, B Cells, NK Cells, Monocytes, and Dendritic Cells</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 2. Bulk RNA-Seq & Differential Expression (DESeq2) Pillar -->
+  <url>
+    <loc>https://suleimanbioinformaticsanalysis.github.io/bulk-rnaseq/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/rnaseq_result.png</image:loc>
+      <image:title>DESeq2 Differential Expression &amp; Count Normalization</image:title>
+      <image:caption>Negative binomial modeling of 1,847 significant DEGs in Triple-Negative Breast Cancer</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/Overview-of-the-STAR-Fusion-pipeline-Illumina-RNA-Seq-reads-are-aligned-to-the-genome.png</image:loc>
+      <image:title>High-Throughput Sequencing Spliced Alignment Pipeline</image:title>
+      <image:caption>Exon junction mapping and chimeric read discovery across oncology cohorts</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 3. Single-Cell RNA-Seq (Seurat v4) Transcriptomics Pillar -->
+  <url>
+    <loc>https://suleimanbioinformaticsanalysis.github.io/single-cell/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/pbmc_umap_islands.png</image:loc>
+      <image:title>Seurat 10x Genomics Graph-Based UMAP Clusters</image:title>
+      <image:caption>9 distinct leukocyte transcriptomic clusters mapped in 2D UMAP space</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/pbmc_qc_violin.png</image:loc>
+      <image:title>Single-Cell QC Violin Plots</image:title>
+      <image:caption>Distribution of nFeature_RNA, nCount_RNA, and mitochondrial percentage thresholds</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/pbmc_marker_dotplot.png</image:loc>
+      <image:title>Cluster Marker Gene Expression Dotplot</image:title>
+      <image:caption>Specific lineage marker discrimination across single-cell subpopulations</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 4. Systems Co-Expression Networks & Machine Learning (WGCNA & Random Forest) Pillar -->
+  <url>
+    <loc>https://suleimanbioinformaticsanalysis.github.io/wgcna-ml/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/ML_ROC_Curve_NestedCV.png</image:loc>
+      <image:title>Nested 5-Fold Stratified Cross-Validation ROC Curve</image:title>
+      <image:caption>Zero-leakage Random Forest performance evaluating TNBC discrimination</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/Reactome_Pathway_Dotplot.png</image:loc>
+      <image:title>WGCNA Turquoise Module Functional Enrichment</image:title>
+      <image:caption>Enrichment of PI3K-Akt signaling, cell cycle progression, and DNA repair pathways</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 5. Structural AI & Molecular Docking (AlphaFold2 & AutoDock Vina) Pillar -->
+  <url>
+    <loc>https://suleimanbioinformaticsanalysis.github.io/structural-biology/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/Netice.png</image:loc>
+      <image:title>Molecular Docking &amp; AKT1 Allosteric Cavity</image:title>
+      <image:caption>MK-2206 binding affinity -9.4 kcal/mol clamping Trp80 and Asp292</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 6. Personal Clinical Genomics & NIH ClinVar 609K SNPs Pillar -->
+  <url>
+    <loc>https://suleimanbioinformaticsanalysis.github.io/clinical-genomics/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- 7. Research Manuscript Submission (PLOS ONE Computational Oncology) -->
+  <url>
+    <loc>https://suleimanbioinformaticsanalysis.github.io/manuscript/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+    <image:image>
+      <image:loc>https://suleimanbioinformaticsanalysis.github.io/assets/Netice.png</image:loc>
+      <image:title>Integrative Multi-Scale Oncology Paper Graphical Synthesis</image:title>
+      <image:caption>Connecting transcriptome co-expression hubs to AlphaFold2 3D models and allosteric Vina docking</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 8. Private Research Data Governance & Repository Access Policy -->
+  <url>
+    <loc>https://suleimanbioinformaticsanalysis.github.io/data-access/</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.85</priority>
+  </url>
+
+  <!-- Section Deep Anchors for Direct Search Indexing -->
+  <url>
+    <loc>https://suleimanbioinformaticsanalysis.github.io/#studio</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://suleimanbioinformaticsanalysis.github.io/#data-access</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://suleimanbioinformaticsanalysis.github.io/#faq</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://suleimanbioinformaticsanalysis.github.io/#overview</loc>
+    <lastmod>2026-11-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.75</priority>
+  </url>
+</urlset>

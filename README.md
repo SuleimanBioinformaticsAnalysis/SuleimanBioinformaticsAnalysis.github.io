@@ -29,6 +29,23 @@
 
 ---
 
+## 🗺️ Search-Engine Optimized URL Architecture & Pillar Paths
+
+Every analytical pillar is mapped to an architect-grade, distinct canonical URL path with tailored Schema.org JSON-LD structured data and Open Graph metadata:
+
+| URL Path | Analytical Focus | Search Engine Target Queries | Priority |
+|---|---|---|:---:|
+| 🌐 **[`/`](https://suleimanbioinformaticsanalysis.github.io/)** | Master Multi-Omics Hub | SuleimanBioinformaticsAnalysis, TNBC computational oncology, multi-omics pipeline | `1.0` |
+| 🧬 **[`/bulk-rnaseq/`](https://suleimanbioinformaticsanalysis.github.io/bulk-rnaseq/)** | Bulk RNA-Seq & DESeq2 | GSE183947 DEGs, Negative Binomial GLM, empirical Bayes dispersion, Volcano Plot | `0.9` |
+| 🔬 **[`/single-cell/`](https://suleimanbioinformaticsanalysis.github.io/single-cell/)** | Single-Cell Seurat v4 | 10x Genomics PBMC clusters, Louvain graph clustering, UMAP projections | `0.9` |
+| 🤖 **[`/wgcna-ml/`](https://suleimanbioinformaticsanalysis.github.io/wgcna-ml/)** | WGCNA & Machine Learning | Scale-free topology $R^2=0.87$, AKT1 master hub, Nested 5-fold CV Random Forest AUC 0.91 | `0.9` |
+| ⚡ **[`/structural-biology/`](https://suleimanbioinformaticsanalysis.github.io/structural-biology/)** | AlphaFold2 & AutoDock Vina | Human AKT1 P31749 3D model, PDB 3O96, allosteric MK-2206 -9.4 kcal/mol vs ATP cleft | `0.9` |
+| 🏥 **[`/clinical-genomics/`](https://suleimanbioinformaticsanalysis.github.io/clinical-genomics/)** | NIH ClinVar 609K SNPs | CPIC Pharmacogenomics, CYP2C9, NAT2, CYP1A2, COMT Val158Met, variant tiers | `0.9` |
+| 📄 **[`/manuscript/`](https://suleimanbioinformaticsanalysis.github.io/manuscript/)** | Research Manuscript | PLOS ONE Computational Oncology Submission, structured abstract & figures | `0.85` |
+| 🔒 **[`/data-access/`](https://suleimanbioinformaticsanalysis.github.io/data-access/)** | Governance & Access Policy | Private research data protocol, genomic privacy, email request procedure | `0.85` |
+
+---
+
 ## 🔬 Core Interactive Capabilities
 
 - **Interactive Transcriptomic Volcano Plot & DEGs:** Dynamic SVG volcano plot with customizable fold-change and FDR thresholds, linked directly to 1,847 significant genes (DESeq2, FDR < 0.05).

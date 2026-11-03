@@ -114,6 +114,29 @@ function initModal() {
 }
 
 /* ==========================================================================
+   Helper: Safe JSON Fetcher across Root & Pillar Subpaths
+   ========================================================================== */
+async function fetchJSON(relPath) {
+  const candidates = [
+    relPath,
+    "../" + relPath,
+    "/" + relPath,
+    "https://suleimanbioinformaticsanalysis.github.io/" + relPath
+  ];
+  for (const url of candidates) {
+    try {
+      const res = await fetch(url);
+      if (res.ok) {
+        return await res.json();
+      }
+    } catch (e) {
+      // try next candidate
+    }
+  }
+  throw new Error("Failed to load JSON resource: " + relPath);
+}
+
+/* ==========================================================================
    4. Bulk RNA-Seq DEGs Dynamic Table
    ========================================================================== */
 let allDEGs = [];
@@ -127,9 +150,7 @@ async function loadDEGs() {
   if (!tbody) return;
 
   try {
-    const res = await fetch("data/degs.json");
-    if (!res.ok) throw new Error("Failed to load degs.json");
-    allDEGs = await res.json();
+    allDEGs = await fetchJSON("data/degs.json");
     renderDEGs(allDEGs);
     initVolcanoPlot(allDEGs);
 
@@ -210,9 +231,7 @@ async function loadSingleCellMarkers() {
   if (!tbody) return;
 
   try {
-    const res = await fetch("data/single_cell_markers.json");
-    if (!res.ok) throw new Error("Failed to load single_cell_markers.json");
-    allSCMarkers = await res.json();
+    allSCMarkers = await fetchJSON("data/single_cell_markers.json");
 
     // Populate cluster select options dynamically if needed
     const clusters = [...new Set(allSCMarkers.map((m) => m.cluster))].sort(
@@ -283,9 +302,7 @@ async function loadClinVarVariants() {
   if (!tbody) return;
 
   try {
-    const res = await fetch("data/clinvar_summary.json");
-    if (!res.ok) throw new Error("Failed to load clinvar_summary.json");
-    allClinVar = await res.json();
+    allClinVar = await fetchJSON("data/clinvar_summary.json");
 
     renderClinVar(allClinVar);
 

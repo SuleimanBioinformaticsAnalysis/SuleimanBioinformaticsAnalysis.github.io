@@ -1,21 +1,69 @@
 {
-  "name": "SuleimanBioinformaticsAnalysis",
+  "name": "SuleimanBioinformaticsAnalysis | Multi-Omics Oncology & Structural AI Hub",
   "short_name": "SBA Hub",
-  "description": "Multi-Omics Pipelines, Clinical Oncology & Structural Drug Discovery Portal",
+  "description": "Production-grade transcriptomic pipelines, single-cell analysis, AlphaFold2 structural biology, AutoDock Vina molecular docking, and ClinVar clinical genomics.",
   "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait-primary",
   "background_color": "#070b14",
-  "theme_color": "#00f2fe",
+  "theme_color": "#f97316",
+  "lang": "en-US",
+  "categories": ["education", "medical", "research", "productivity"],
   "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
     {
       "src": "favicon.png",
       "sizes": "64x64",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
     },
     {
       "src": "apple-touch-icon.png",
       "sizes": "180x180",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/logo-emblem.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Bulk RNA-Seq DEGs",
+      "short_name": "DEGs",
+      "description": "Explore 1,847 significant Triple-Negative Breast Cancer genes",
+      "url": "./bulk-rnaseq/index.html",
+      "icons": [{ "src": "favicon.png", "sizes": "64x64" }]
+    },
+    {
+      "name": "Single-Cell Seurat",
+      "short_name": "Single-Cell",
+      "description": "10x Genomics PBMC cluster markers and UMAP projections",
+      "url": "./single-cell/index.html",
+      "icons": [{ "src": "favicon.png", "sizes": "64x64" }]
+    },
+    {
+      "name": "AlphaFold & Docking",
+      "short_name": "Structure",
+      "description": "AlphaFold2 AKT1 kinase model and AutoDock Vina inhibitor screening",
+      "url": "./structural-biology/index.html",
+      "icons": [{ "src": "favicon.png", "sizes": "64x64" }]
+    },
+    {
+      "name": "ClinVar 609K SNPs",
+      "short_name": "ClinVar",
+      "description": "Pharmacogenomics and personal clinical variant annotations",
+      "url": "./clinical-genomics/index.html",
+      "icons": [{ "src": "favicon.png", "sizes": "64x64" }]
     }
   ]
 }
